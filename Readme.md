@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Дарья Егошина](https://htmlacademy.ru/profile/id125649).
-* Наставник: [Екатерина Климович](https://htmlacademy.ru/profile/id84950).
+* Наставник: [Екатерина :) Климович](https://htmlacademy.ru/profile/id84950).
 
 ---
 
