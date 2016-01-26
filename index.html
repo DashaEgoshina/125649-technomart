@@ -76,11 +76,11 @@
 
 
     <section class="popular">
-        <div class="popular-items-title"> <!-- обернула в див для позиционирования и стилиз фон-->
+        <div class="popular-title"> <!-- обернула в див для позиционирования и стилиз фон-->
             <h1>популярные товары:</h1>
             <a class="button button-popular">все популярные товары</a>
         </div>
-        <div class="popular-items"> <!-- этот див лишний?-->
+        <div class="popular-items">
             <article class="popular-item">
                 <div class="actions">
                     <a href="#" class="btn buy">Купить</a>    <!-- кнопки скрываются в неактивном состоянии-->
@@ -90,10 +90,8 @@
                     <img src="#" width="#" height="#" alt="Перфоратор BOSCH BFG 9000">
                 </div>
                 <div class="item-title">Перфоратор <span>bosch bfg 9000</span></div>
-                <div class="item-price-last">32500 р.</div>
-                <!-- здесь Р. прописать заглавной или в тег спан обернуть -->
-                <div class="item-price-new">25500 р.</div>
-                <!-- здесь Р. прописать заглавной или в тег спан обернуть -->
+                <div class="item-price-last">32500 Р.</div>
+                <div class="item-price-new">25500 Р.</div>
             </article>
 
             <article class="popular-item">
@@ -105,10 +103,8 @@
                     <img src="#" width="#" height="#" alt="Перфоратор BOSCH BFG 3000">
                 </div>
                 <div class="item-title">Перфоратор <span>bosch bfg 3000</span></div>
-                <div class="item-price-last">22500 р.</div>
-                <!-- здесь Р. прописать заглавной или в тег спан обернуть -->
-                <div class="item-price-new">15500 р.</div>
-                <!-- здесь Р. прописать заглавной или в тег спан обернуть -->
+                <div class="item-price-last">22500 Р.</div>
+                <div class="item-price-new">15500 Р.</div>
             </article>
 
             <article class="popular-item">
@@ -120,13 +116,11 @@
                     <img src="#" width="#" height="#" alt="Перфоратор BOSCH BFG 6000">
                 </div>
                 <div class="item-title">Перфоратор <span>bosch bfg 6000</span></div>
-                <div class="item-price-last">30500 р.</div>
-                <!-- здесь Р. прописать заглавной или в тег спан обернуть -->
-                <div class="item-price-new">25500 р.</div>
-                <!-- здесь Р. прописать заглавной или в тег спан обернуть -->
+                <div class="item-price-last">30500 Р.</div>
+                <div class="item-price-new">25500 Р.</div>
             </article>
 
-            <article class="popular-item">
+            <article class="popular-item new"> <!-- добавила класс new для общей стилизации товаров с меткой new-->
                 <div class="actions">
                     <a href="#" class="btn buy">Купить</a>    <!-- кнопки скрываются в неактивном состоянии-->
                     <a href="#" class="btn bookmark">В закладки</a>
@@ -135,11 +129,10 @@
                     <img src="#" width="#" height="#" alt="Перфоратор BOSCH BFG 2000">
                 </div>
                 <div class="item-title">Перфоратор <span>bosch bfg 9000</span></div>
-                <div class="item-price-new">12500 р.</div>
-                <!-- здесь Р. прописать заглавной или в тег спан обернуть -->
+                <div class="item-price-new">12500 Р.</div>
             </article>
         </div>
-        <div class="popular-manufacturers-title">   <!-- обернула в див для позиционирования и стилиз фон-->
+        <div class="popular-title">   <!-- обернула в див для позиционирования и стилиз фон-->
             <h1>популярные производители:</h1>
             <a class="button button-popular">все производители</a>
         </div>
@@ -156,6 +149,12 @@
     </section>
 
     <section class="slider">
+        <div class="service">
+            <h2>сервисы</h2>
+            <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы
+                сделать
+                ваши покупки приятными.</p>
+        </div>
         <ul class="slider-nav">
             <li>
                 <a href="#">Доставка</a>
@@ -167,16 +166,9 @@
                 <a href="#">Кредит</a>
             </li>
         </ul>
-
         <div class="slider-slides">
-            <div class="service">
-                <h2>сервисы</h2>
-                <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы
-                    сделать
-                    ваши покупки приятными.</p>
-            </div>
             <div class="delivery">
-                <h2>доставка</h2>
+                <h2 class="slides-title">доставка</h2>     <!---добавила класс для h2 т.к. он отличается от остальных h2 -->
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                     заработаем, ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
             </div>
