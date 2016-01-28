@@ -1,0 +1,33 @@
+.item-title {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: Bold;
+    font-family: PT Sans Bold;
+}
+
+.item-price-last {
+    font-size: 17px;
+    line-height: 18px;
+    color: #999999;
+    font-weight: Bold;
+    text-decoration: line-through;
+}
+
+.item-price-new {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: Bold;
+    background-color: red;
+}
+
+.breadcrumbs a {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: Regular;
+    font-family: PT Sans Regular;
+    text-decoration: none;
+}
+
