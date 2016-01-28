@@ -2,7 +2,7 @@
     font-size: 18px;
     line-height: 20px;
     color: #000000;
-    font-weight: Bold;
+    font-weight: bold;
     font-family: PT Sans Bold;
 }
 
@@ -10,7 +10,7 @@
     font-size: 17px;
     line-height: 18px;
     color: #999999;
-    font-weight: Bold;
+    font-weight: bold;
     text-decoration: line-through;
 }
 
@@ -18,7 +18,7 @@
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
-    font-weight: Bold;
+    font-weight: bold;
     background-color: red;
 }
 
@@ -26,7 +26,7 @@
     font-size: 13px;
     line-height: 18px;
     color: #000000;
-    font-weight: Regular;
+    font-weight: normal;
     font-family: PT Sans Regular;
     text-decoration: none;
 }
