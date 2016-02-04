@@ -80,6 +80,8 @@ a {
 .header-top-nav{
     float: right;
     width: 460px;
+    font-size: 0;
+
 }
 
 a.bookmarks, a.cart, a.action{
@@ -196,6 +198,7 @@ a.offers, a.personal-account{
     background-color: #32425c;
     height: 60px;
     text-align: center;
+    font-size: 0;
 }
 .header-navigation li{
    display: inline-block;
@@ -251,6 +254,19 @@ padding: 20px 30px;
     padding-top: 30px;
 }
 
+
+
+
+
+
+
+
+
+
+.conteiner-left {
+    width: 220px;
+}
+
 .filters span {
     font-family: PT Sans Regular;
     font-size: 13px;
@@ -258,50 +274,48 @@ padding: 20px 30px;
     background-color: #f7f3ec;
     text-transform: uppercase;
     padding: 15px 150px 15px  20px;
-
 }
-section .conteiner-left {
-    float: left;
-    width: 220px;
-}
-
 
 h2{
-   font-family: PT Sans Bold;
+    font-family: PT Sans Bold;
     font-size: 17px;
     line-height: 30px;
     text-transform: uppercase;
     padding-top: 20px;
+
 }
 
 .range-filter{
-    padding-top:10px;
+    padding-top:5px;
     width:220px;
-
     margin-bottom:10px;
 }
+
 .range-controls{
-    position:relative;
+     position:relative;
     height:80px;
-    margin-bottom:15px;
+    margin-bottom:10px;
     padding:0 30px;
     border-radius:5px;
     overflow:hidden;
     background-color: #f7f3ec;
 }
+
 .scale{
     margin-top:39px;
     height:2px;
     background-color: #d7dcde;
 }
+
 .bar{
     height:2px;
     background:#00ca74;
+    width:130px;
 }
+
 .toggle{
     position:absolute;
     top:30px;
-    left:30px;
     width:4px;
     height:4px;
     border:8px solid white;
@@ -309,9 +323,11 @@ h2{
     cursor:pointer;
     border-radius:50%;
 }
+
 .min-toggle{
     left:10px;
 }
+
 .max-toggle{
     left:145px;
 }
@@ -326,7 +342,6 @@ h2{
     text-align:center;
     color:#283136;
     border-radius:5px;
-
 }
 
 input.min-price {
@@ -338,8 +353,8 @@ input.min-price {
     font-size: 15px;
     line-height: 20px;
     text-transform: uppercase;
-
 }
+
 .filter-checkbox, .filter-radio{
     margin-bottom: 20px;
 }
@@ -357,74 +372,97 @@ a.button{
     line-height: 18px;
     color: #000000;
     text-transform: uppercase;
+
 }
+
+
+
+
+
 
 
 
 .conteiner-right{
     float: right;
-    width: 600px;
+    width: 700px;
+
 }
 
 
-
-.sort-navigation{
+.sort-navigation {
     font-family: PT Sans Regular;
     font-size: 13px;
     line-height: 18px;
     background-color: #f7f3ec;
-    text-transform: uppercase;
-    padding: 15px 150px 15px  20px;
-    display: inline-block;
+    text-transform: uppercase;}
+
+
+
+.items{
+    font-size: 0;
+    margin: 0;
 }
 
-
-.sort-navigation li {
+.item {
     display: inline-block;
+    width: 220px;
+    height: 318px;
+    background-color: #ffffff;
     vertical-align: top;
-}
-
-.sort-navigation a{
-    color: #000000;
+    border: 1px solid #e5e5e5;
 }
 
 
 
+.actions{
 
+}
+a .btn .buy   {
 
+}
+a .btn .bookmark{
 
+}
 
+.item-image{
+    padding-right:45px;
+    padding-left: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
-
-
-
-
-
-
-
-.item-title {
+.item-title{
     font-size: 18px;
     line-height: 20px;
     color: #000000;
     font-weight: bold;
     font-family: PT Sans Bold;
+    text-align: center;
 }
 
-.item-price-last {
+.item-title span{
+    text-transform: uppercase;
+}
+
+.item-price-last{
     font-size: 17px;
     line-height: 18px;
     color: #999999;
     font-weight: bold;
     text-decoration: line-through;
+    text-align: center;
 }
 
-.item-price-new {
+.item-price-new{
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
     font-weight: bold;
     background-color: red;
+    text-align: center;
 }
+
+
 
 
 
