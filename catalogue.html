@@ -7,9 +7,8 @@
 </head>
 <body>
 <header class="main-header">
-    <div class="container">
-
-        <div class="header-top clearfix">
+    <div class="header-top clearfix">
+        <div class="container">
             <a class="button-top-logo" href="#">техномарт</a>
             <div class="header-top-search">
                 <input type="search" placeholder="Поиск:">
@@ -20,7 +19,8 @@
                 <a class="action" href="#">Оформить заказ</a>
             </div>
         </div>
-
+    </div>
+    <div class="container">
         <div class="header-center clearfix">
             <div class="header-center-about">
                 <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -64,7 +64,7 @@
         <div class="header">
             <h1>перфораторы</h1>
         </div>
-    <div class="clearfix">
+        <div class="clearfix">
             <section class="conteiner-left">
                 <div class="filters">
                     <span>фильтр:</span>
@@ -133,14 +133,18 @@
             </section>
             <section class="conteiner-right">
                 <div class="sort-navigation">
-                    <span>сортировка:</span>
                     <ul class="sort">
+                        <li><span>сортировка:</span></li>
                         <li><a class="sort-price active" href="#">по цене</a></li>
                         <li><a class="sort-type" href="#">по типу</a></li>
                         <li><a class="sort-function" href="#">по функционалу</a></li>
+                        <li>
+                            <div class="sort-low-to-hight active"></div>
+                        </li>  <!--пустые дивы для стрелочек -->
+                        <li>
+                            <div class="sort-hight-to-low"></div>
+                        </li>
                     </ul>
-                    <div class="sort-low-to-hight active"></div>  <!--пустые дивы для стрелочек -->
-                    <div class="sort-hight-to-low"></div>
                 </div>
                 <div class="items">
                     <article class="item">
@@ -248,36 +252,36 @@
                     </article>
                 </div>
 
-        <ul class="paginator">
-            <li class="paginator-item"><a class="active" href="#">1</a></li>
-            <li class="paginator-item"><a href="#">2</a></li>
-            <li class="paginator-item"><a href="#">3</a></li>
-            <li class="paginator-item paginator-item-next"><a href="#">следующая</a></li>
-        </ul>
+                <ul class="paginator">
+                    <li class="paginator-item"><a class="active" href="#">1</a></li>
+                    <li class="paginator-item"><a href="#">2</a></li>
+                    <li class="paginator-item"><a href="#">3</a></li>
+                    <li class="paginator-item paginator-item-next"><a href="#">следующая</a></li>
+                </ul>
 
-        </section>
+            </section>
+        </div>
+
     </div>
-        <section class="info">
+    <section class="info">
+        <div class="container">
             <h3>пара слов о перфораторах</h3>
-            <p> Перфоратор - универсальный строительный инструмент. Предназначен для сверления отверстий в кирпиче,
-                бетоне и
-                камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
-                функции
-                дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном
-                устройстве
-                будут совмещены отбойный молоток и ударная дрель.
+            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+                кирпиче, бетоне и камне.
+                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
+                дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном
+                устройстве будут совмещены отбойный молоток и ударная дрель.
             </p>
-        </section>
+        </div>
+    </section>
 
-    </div>
+
 </main>
 
 <footer class="main-footer">
     <div class="container">
-        <div class="footer-top">
-            <a class="header-top-logo" href="#">
-                <img src="#" width="40" height="20" alt="техномарт">
-            </a>
+        <div class="footer-top clearfix">
+            <a class="header-top-logo" href="#">техномарт</a>
             <div class="footer-top-navigation">
                 <ul>
                     <li><a href="#">Компания</a></li>
@@ -288,7 +292,7 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-center">
+        <div class="footer-center clearfix">
             <div class="footer-center-contacts">
                 <div class="address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
                 <div class="phone">+7(812)555-05-55</div>
@@ -302,7 +306,9 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom">
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
             <div class="footer-bottom-info">
                 <div>© 2010-2016 Компания "Техномарт"</div>
                 <div> Все права защищены</div>
@@ -312,18 +318,23 @@
                 <a class="social-btn social-btn-fb" href="#"></a>
                 <a class="social-btn social-btn-inst" href="#"></a>
             </div>
-            <div class="footer-bottom-contacts">
+
+            <div class="footer-bottom-develop"
+                <span>Разработано -</span>
+                <a class="cite" href="https://htmlacademy.ru">htmlacademy.ru</a>
+             </div>
+
+
                 <div class="footer-bottom-mail">
-                    <div>Обратная связь:</div>
+                    <span>Обратная связь:</span>
                     <a class="cite" href="https://htmlacademy.ru/contacts">mail@htmlacademy.ru</a>
                 </div>
-                <div class="footer-bottom-develop"
-                <div>Разработано -</div>
-                <a class="cite" href="https://htmlacademy.ru">htmlacademy.ru</a>
-            </div>
+
+
         </div>
     </div>
-    </div>
+
+
 </footer>
 
 </body>

@@ -7,20 +7,20 @@
 </head>
 <body>
 <header class="main-header">
-    <div class="container">
-
-        <div class="header-top clearfix">
+    <div class="header-top clearfix">
+        <div class="container">
             <a class="button-top-logo" href="#">техномарт</a>
             <div class="header-top-search">
                 <input type="search" placeholder="Поиск:">
             </div>
             <div class="header-top-nav">
                 <a class="bookmarks" href="#">Закладки: 0</a>
-                <a class="cart" href="#">Корзина: 0</a>
+                <a class="cart" href="#">Корзина: 10</a>
                 <a class="action" href="#">Оформить заказ</a>
             </div>
         </div>
-
+    </div>
+    <div class="container">
         <div class="header-center clearfix">
             <div class="header-center-about">
                 <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -52,7 +52,7 @@
 
 <main>
     <div class="container">
-        <section class="promo">
+        <section class="promo clearfix">
             <div class="promo-top">
                 <div class="promo-item promo-item-materials">Материалы</div>
                 <div class="promo-item promo-item-tools">Инструмент</div>
@@ -64,18 +64,19 @@
                     <div class="promo-info">
                         <span>Перфораторы</span>
                         <p> Настоящие мужские игрушки</p>
+                        <a class="button button-catalog" href="#">открыть каталог</a>
                     </div>
-                    <a class="button button-catalog" href="#">открыть каталог</a>
+
                 </div>
+
+                <div class="promo-item promo-item-sale">Скидки</div>
+                <div class="promo-item promo-item-delivery">Доставка</div>
             </div>
-            <div class="promo-item promo-item-sale">Скидки</div>
-            <div class="promo-item promo-item-delivery">Доставка</div>
-    </div>
-    </section>
+         </section>
 
 
     <section class="popular">
-        <div class="popular-title"> <!-- обернула в див для позиционирования и стилиз фон-->
+        <div class="popular-title clearfix">
             <h1>популярные товары:</h1>
             <a class="button button-popular">все популярные товары</a>
         </div>
@@ -131,7 +132,7 @@
                 <div class="item-price-new">12500 Р.</div>
             </article>
         </div>
-        <div class="popular-title">   <!-- обернула в див для позиционирования и стилиз фон-->
+        <div class="popular-title clearfix">   <!-- обернула в див для позиционирования и стилиз фон-->
             <h1>популярные производители:</h1>
             <a class="button button-popular">все производители</a>
         </div>
@@ -146,8 +147,9 @@
             <div><img src="img/Metabo.jpg" width="204" height="69" alt="metabo"></div>
         </div>
     </section>
-
-    <section class="slider">
+    </div>
+    <section class="slider clearfix">
+        <div class="container">
         <div class="service">
             <h2>сервисы</h2>
             <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы
@@ -156,7 +158,7 @@
         </div>
         <ul class="slider-nav">
             <li>
-                <a href="#">Доставка</a>
+                <a class="active" href="#">Доставка</a>
             </li>
             <li>
                 <a href="#">Гарантия</a>
@@ -167,12 +169,15 @@
         </ul>
         <div class="slider-slides">
             <div class="delivery">
-                <h2 class="slides-title">доставка</h2>     <!---добавила класс для h2 т.к. он отличается от остальных h2 -->
+                <h2 class="slides-title">доставка</h2>
+                <!---добавила класс для h2 т.к. он отличается от остальных h2 -->
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                     заработаем, ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
             </div>
+        </div>
     </section>
-    <section class="info">
+    <div class="container">
+    <section class="info-tehnomart clearfix">
         <div class="info-company">
             <h2>компания "техномарт"</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
@@ -196,15 +201,14 @@
             <a class="button" href="#">заблудились? напишите нам!</a>
         </div>
     </section>
-
     </div>
+
 </main>
+
 <footer class="main-footer">
     <div class="container">
-        <div class="footer-top">
-            <a class="header-top-logo" href="#">
-                <img src="#" width="40" height="20" alt="техномарт">
-            </a>
+        <div class="footer-top clearfix">
+            <a class="header-top-logo" href="#">техномарт</a>
             <div class="footer-top-navigation">
                 <ul>
                     <li><a href="#">Компания</a></li>
@@ -215,7 +219,7 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-center">
+        <div class="footer-center clearfix">
             <div class="footer-center-contacts">
                 <div class="address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
                 <div class="phone">+7(812)555-05-55</div>
@@ -229,7 +233,9 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom">
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
             <div class="footer-bottom-info">
                 <div>© 2010-2016 Компания "Техномарт"</div>
                 <div> Все права защищены</div>
@@ -239,19 +245,25 @@
                 <a class="social-btn social-btn-fb" href="#"></a>
                 <a class="social-btn social-btn-inst" href="#"></a>
             </div>
-            <div class="footer-bottom-contacts">
-                <div class="footer-bottom-mail">
-                <div>Обратная связь:</div>
-                <a class="cite" href="https://htmlacademy.ru/contacts">mail@htmlacademy.ru</a>
-                </div>
-                <div class="footer-bottom-develop"
-                <div>Разработано -</div>
-                <a class="cite" href="https://htmlacademy.ru">htmlacademy.ru</a>
-                </div>
-            </div>
+
+            <div class="footer-bottom-develop"
+            <span>Разработано -</span>
+            <a class="cite" href="https://htmlacademy.ru">htmlacademy.ru</a>
         </div>
+
+
+        <div class="footer-bottom-mail">
+            <span>Обратная связь:</span>
+            <a class="cite" href="https://htmlacademy.ru/contacts">mail@htmlacademy.ru</a>
+        </div>
+
+
     </div>
+    </div>
+
+
 </footer>
+
 
 </body>
 </html>
