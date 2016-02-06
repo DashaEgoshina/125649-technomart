@@ -501,6 +501,7 @@ a .btn .bookmark{
     list-style: none;
     display: inline-block;
     margin-right: 5px;
+    vertical-align: top;
 }
 
 .paginator-item-next a{
@@ -569,6 +570,7 @@ padding-top: 60px;
 .promo-slider{
     float: left;
     position: relative;
+    width: 620px;
 }
 
 .promo-info{
@@ -600,14 +602,16 @@ a.button-catalog{
     border: none;
 
 }
-
-.promo-item-sale{
+.promo-items{
     float: right;
+    width: 300px;
+}
+.promo-item-sale{
+
     background-color: #85d179;
 }
 
 .promo-item-delivery{
-    float: right;
     background-color: #f6b22d;
 }
 
@@ -629,6 +633,11 @@ h1 {
 
  }
 
+.popular-title h1{
+    width: 375px;
+    float: left;
+    margin-left: 25px;
+}
 
 a.button-popular{
     color: #ffffff;
@@ -636,7 +645,7 @@ a.button-popular{
     border: none;
     float: right;
     width: 250px;
-    margin-top: 25px;
+margin-top: 25px;
     margin-right: 25px;
     font-family: "Cuprum Regular";
     font-size: 14px;
@@ -699,7 +708,7 @@ margin-right: 0;
 
 .slider{
     height: 522px;
-    background: #f2f6f8 url("../img/layer 131.png") 0 250px  no-repeat;
+    background: #f2f6f8 url("../img/layer 131.png") 600px 250px no-repeat;
 }
 
 
@@ -720,6 +729,7 @@ font-family: "Cuprum Regular";
 
 .slider-nav{
     float: left;
+width: 240px;
 }
 
 .slider-nav ul{
@@ -750,13 +760,15 @@ font-family: "Cuprum Regular";
     border: none;
 }
 
+.slider-slides{
+    float: right;
+    width: 620px;
+}
+
 .delivery{
     width: 300px;
-    float: right;
-    margin-right: 310px;}
 
-
-
+}
 
 .delivery .slides-title{
     font-family: "Cuprum Regular";
@@ -809,11 +821,9 @@ font-family: "Cuprum Regular";
     color: #ffffff;
 }
 
-
 .info-contacts{
     float: right;
     width: 300px;
-   padding-left: 90px;
 }
 
 .info-contacts h2{
