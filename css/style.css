@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: "Cuprum Bold Italic";
+    src: url("../fonts/cuprumbolditalic.woff");
+}
+
+@font-face {
     font-family: "Cuprum Italic";
     src: url("../fonts/cuprumitalic.woff");
 }
@@ -58,24 +63,54 @@ a {
     min-height: 42px;
 }
 
+
+.header-top:hover{
+   background-color: #212a3a;
+}
+
+
+
 .header-top .button-top-logo{
     float: left;
     width: 220px;
     background-color: #ee3643;
     color: #ffffff;
-    height: 33px;
+    height: 38px;
     font-family: "Cuprum Bold";
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
     text-align: center;
     padding-top: 9px;
+    box-shadow: inset 0 -10px 1px -5px #b52933;
+    box-shadow-left: transparent;
+    position: absolute;
+}
+
+
+
+.header-top .button-top-logo:hover, .header-top .button-top-logo:active{
+background-color:#ca2c37;
 }
 
 .header-top-search{
     float: left;
-    width: 80px;
+    width: 270px;
+    position: fixed;
+    right: 655px;
+    padding-top: 10px;
+    border: 1px solid greenyellow;
 }
+
+input, textarea .header-top-search {
+    border: none;
+    background: none;
+    color: #ffffff;
+    border: 1px solid greenyellow;
+    width: 270px;
+}
+
+
 
 .header-top-nav{
     float: right;
@@ -83,6 +118,8 @@ a {
     font-size: 0;
 
 }
+
+
 
 a.bookmarks, a.cart, a.action{
     font-family: "Cuprum Regular";
@@ -96,21 +133,36 @@ a.bookmarks, a.cart, a.action{
     text-align: center;
     height: 30px;
     padding-top: 12px;
+
 }
 
 a.bookmarks{
     width: 160px;
+    background:  url("../img/sprite.png") no-repeat;
+    background-position: 4px -913px;
 }
+
+
 a.cart{
-    background-color: #ee3643;
+    background: #ee3643 url("../img/sprite.png") no-repeat;
+    background-position: 8px -876px;
+    text-align: right;
+    padding-right: 20px;
+    width: 130px;
+
 }
-a.cart::before {
-    content: "";
+
+a.cart-index{
+    background:  url("../img/sprite.png") no-repeat;
+    background-position: -10px -879px;
 }
+
 a.action{
     background-color: #63a63e;
 }
-
+a.action:hover{
+    background-color: #5fbb2d;
+}
 
 
 .header-center {
@@ -162,15 +214,26 @@ a.action{
 
 a.login{
     width: 150px;
-    background-color: #ffffff;
+    background: #ffffff url("../img/sprite.png") no-repeat;
+    background-position: 7px -839px;
     padding: 10px 25px 10px 50px;
     font-size: 21px;
     line-height: 18px;
     color: #000000;
-margin-right: 5px;
+    margin-right: 5px;
     margin-left: 15px;
+}
+
+
+
+a.login:hover{
+    color: #ee3643;
+    width: 150px;
+    background: #ffffff url("../img/sprite.png") no-repeat;
+    background-position: 7px -1291px;
 
 }
+
 a.registration{
    width:  122px;
     background-color: #ffffff;
@@ -178,9 +241,23 @@ a.registration{
     font-size: 21px;
     line-height: 18px;
     color: #000000;
-
 }
 
+a.registration:hover{
+    color: #ee3643;
+}
+
+
+
+a.registration:active, a.login:active{
+color: #c5c5c5;
+}
+
+
+a.login:active {
+    background: #ffffff url("../img/sprite.png") no-repeat;
+    background-position: 7px -839px;
+}
 a.user{
     color: #000000;
     font-size: 21px;
@@ -682,6 +759,7 @@ margin-bottom: 20px;
 .popular-manufacturers {
     font-size: 0;
     margin: 0;
+    margin-bottom: 55px;
 }
 
 .popular-manufacturers div{
@@ -692,7 +770,7 @@ margin-bottom: 20px;
     border: 1px solid #e5e5e5;
     margin-right: 18px;
     margin-top: 20px;
-    margin-bottom: 55px;
+
 }
 
 
@@ -852,7 +930,6 @@ padding-bottom: 40px;
     min-height: 300px;
     background-color: #32425c;
     font-family: "Cuprum Regular";
-
 }
 
 .footer-top{
@@ -1013,4 +1090,175 @@ a .social-btn {
 
 a.cite{
     color: #ffd180;
+}
+
+/* sprite */
+
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Cross-_16x16_-copy {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -10px;
+}
+
+.sprite-Layer-100 {
+    width: 59px;
+    height: 72px;
+    background-position: -10px -51px;
+}
+
+.sprite-Layer-101 {
+    width: 78px;
+    height: 63px;
+    background-position: -10px -143px;
+}
+
+.sprite-Layer-118 {
+    width: 10px;
+    height: 272px;
+    background-position: -10px -226px;
+}
+
+.sprite-Layer-92 {
+    width: 44px;
+    height: 65px;
+    background-position: -10px -518px;
+}
+
+.sprite-Layer-95 {
+    width: 78px;
+    height: 62px;
+    background-position: -10px -603px;
+}
+
+.sprite-Layer-96 {
+    width: 75px;
+    height: 61px;
+    background-position: -10px -685px;
+}
+
+.sprite-Shape-3-copy-3 {
+    width: 66px;
+    height: 66px;
+    background-position: -10px -766px;
+}
+
+.sprite-greyicon-login {
+    width: 20px;
+    height: 17px;
+    background-position: -10px -852px;
+}
+
+.sprite-icon-basket {
+    width: 17px;
+    height: 16px;
+    background-position: -10px -889px;
+}
+
+.sprite-icon-bookmark {
+    width: 14px;
+    height: 16px;
+    background-position: -10px -925px;
+}
+
+.sprite-icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -10px -961px;
+}
+
+.sprite-icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -10px -1004px;
+}
+
+.sprite-icon-circle {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -1047px;
+}
+
+.sprite-icon-circle-dot {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -1092px;
+}
+
+.sprite-icon-facebook-copy {
+    width: 10px;
+    height: 18px;
+    background-position: -10px -1137px;
+}
+
+.sprite-icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -10px -1175px;
+}
+
+.sprite-icon-instagramm-copy {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -1207px;
+}
+
+.sprite-icon-left {
+    width: 22px;
+    height: 40px;
+    background-position: -10px -1244px;
+}
+
+.sprite-icon-login {
+    width: 20px;
+    height: 17px;
+    background-position: -10px -1304px;
+}
+
+.sprite-icon-right {
+    width: 22px;
+    height: 40px;
+    background-position: -10px -1341px;
+}
+
+.sprite-icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -1401px;
+}
+
+.sprite-icon-search-red {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -1438px;
+}
+
+.sprite-icon-user {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -1475px;
+}
+
+.sprite-icon-user-grey {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -1513px;
+}
+
+.sprite-icon-vk-copy {
+    width: 20px;
+    height: 12px;
+    background-position: -10px -1551px;
+}
+
+.sprite-new-flag {
+    width: 60px;
+    height: 59px;
+    background-position: -10px -1583px;
 }
