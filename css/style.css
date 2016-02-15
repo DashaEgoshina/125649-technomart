@@ -38,7 +38,7 @@ font-family: "PT Sans Regular";
 }
 
 [class^="icon-"]::before,
-[class*="icon-"]::before {
+[class*=" icon-"]::before {
     display: inline-block;
     width: 1em;
     margin-right: 0.2em;
@@ -53,7 +53,7 @@ font-family: "PT Sans Regular";
     font-style: normal;
     font-variant: normal;
 
-    speak: none;}
+    speak: none;
 }
 
 .icon-left::before { content: "\3c"; } /* "&lt;" */
@@ -84,51 +84,24 @@ font-family: "PT Sans Regular";
 .icon-bookmark::before { content: "🔖"; } /* "\1f516" */
 
 
-
-.icon-bookmark{
+.icon-search {
+    position: absolute;
     color: #586171;
-    padding-right: 10px;
+    right: 208px;
+    bottom: 13px;
 }
 
-.icon-basket{
-    color: #586171;
-    padding-right: 10px;
+.header-top-search:hover .icon-search{
+    color: #ffffff;
 }
 
-.icon-phone{
-    color: #b7bfc8;
-    padding-right: 40px;
-    padding-left: 10px;
-}
-
-.icon-login{
-    color: #c5c5c5;
-    padding-right: 5px;
-}
-
-.icon-user{
-    color: #b7bfc8;
-    padding-right: 15px;
-}
-
-.icon-logout{
-    color: #b7bfc8;
-    padding-left: 20px;
-}
-
-.icon-home {
-    color: #b7bfc8;
-}
-
-
-.icon-right{
-    color: #b7bfc8;
-    padding-right: 10px;
+.icon-search:focus {
+    color: #ba2732;
 }
 
 .icon-up-dir, .icon-down-dir{
     color: #b7bfc8;
-font-size: 22px;
+    font-size: 22px;
 }
 
 .icon-up-dir:hover, .icon-down-dir:hover{
@@ -141,13 +114,17 @@ font-size: 22px;
 }
 
 
-
-.icon-circle, .icon-circle-dot, .icon-check-off, .icon-check-on {
-    font-size: 28px;
-    color: #c1c1c1;
+.icon-left{
+    position: absolute;
+    left: -16px;
+    top: 100px;
 
 }
-
+.icon-right{
+   position: absolute;
+    right: -360px;
+    top: 100px;
+}
 
 
 
@@ -227,64 +204,33 @@ a {
 .header-top-search{
     float: left;
     width: 240px;
-    right: 655px;
     height: 42px;
-
+    position: relative;
 }
 
 
  input[type="search"] {
-     content: "🔍";
     border: none;
     background: none;
-    position: relative;
     outline: none;
     width: 240px;
     font-size: 17px;
     height: 40px;
-    padding-left: 50px;
+     padding-left: 40px;
     font-family: "Cuprum Regular", 'Arial', sans-serif;
 }
 
-input[type="search"]::after{
-    content: "🔍";
-    position: absolute;
-    top: 0;
-    right: 0px;
 
-    width: 10px;
-    height: 10px;
-    display: block;
+
+.header-top-search input[type="search"]:focus{
+    background: #ffffff;
 }
 
 
-/*
-
-.icon-search {
-    position: relative;
-    color: #586171;
-    right: -15px;
-    bottom: -13px;
-}
-
-input[type="search"]:hover .icon-search{
-    color: #ee3643;
-}
-
-*/
-
-.header-top-search:hover .icon-search, a.bookmarks:hover .icon-bookmark, a.cart:hover .icon-basket{
-color: #ffffff;
-}
-
- a.bookmarks:active .icon-bookmark, a.cart:active .icon-basket{
-    color: #586171;
-}
-
-
-                                                                                                                                   .header-top-search input::-webkit-input-placeholder{
+.header-top-search input::-webkit-input-placeholder{
     color: #ffffff;
 }
+
 
 .header-top-nav{
     float: right;
@@ -308,17 +254,51 @@ a.bookmarks, a.cart, a.action{
 
 a.bookmarks {
     width: 160px;
+    position: relative;
 }
 
-a.cart{
+a.bookmarks::before{
+    content: "\1f516";
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
+    display: block;
+    font-family: symbols-technomart;
+    color: #ffffff;
+    opacity: 0.3;
+}
 
+
+a.bookmarks:hover::before, a.cart:hover::before{
+  opacity: 1;
+}
+
+a.bookmarks:active::before, a.cart:active::before{
+    opacity: 0.3;
+}
+
+
+a.cart{
     text-align: right;
     padding-right: 20px;
     width: 130px;
+    position: relative;
 }
 
-a.cart-index{
+a.cart::before{
+    content: "\1f516";
+    position: absolute;
+    bottom: 13px;
+    left: 25px;
+    display: block;
+    font-family: symbols-technomart;
+    color: #ffffff;
+    opacity: 0.8;
+}
 
+
+a.cart-catalog{
+ background: #ee3643;
 }
 
 a.action{
@@ -326,6 +306,10 @@ a.action{
 }
 a.action:hover{
     background-color: #5fbb2d;
+}
+
+.action:active{
+ opacity: 0.9;
 }
 
 .header-center {
@@ -354,10 +338,25 @@ a.action:hover{
     font-size: 21px;
     line-height: 17px;
     border: 3px solid white;
-
+    position: relative;
     height: 30px;
     padding-top: 10px;
+    padding-left: 75px;
 }
+
+.header-center-contacts .phone::before{
+    content:  "\1f4de";
+    position: absolute;
+    bottom: 13px;
+    left: 25px;
+    display: block;
+    font-family: symbols-technomart;
+    color: #000000;
+    opacity: 0.3;
+}
+
+
+
 .header-center-contacts .address{
     color: #32425c;
     font-size: 14px;
@@ -376,14 +375,12 @@ a.action:hover{
 a.login{
     width: 150px;
     background-color: #ffffff;
-
-
+    position: relative;
 
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
     padding-right: 30px;
-
 
     font-size: 21px;
     line-height: 18px;
@@ -392,13 +389,28 @@ a.login{
     margin-left: 15px;
 }
 
-
+a.login::before{
+    content: "\2386";
+    position: absolute;
+    bottom: 13px;
+    left: 20px;
+    display: block;
+    font-family: symbols-technomart;
+    color: #000000;
+    opacity: 0.3;
+}
 
 a.login:hover{
     color: #ee3643;
     width: 150px;
+}
 
+a.login:hover::before{
+    opacity: 1;
+}
 
+a.login:active::before{
+    opacity: 0.3;
 }
 
 a.registration{
@@ -409,6 +421,7 @@ a.registration{
     line-height: 18px;
     color: #000000;
 }
+
 
 a.registration:hover{
     color: #ee3643;
@@ -433,8 +446,41 @@ a.user{
     display: block;
     text-align: center;
     margin-top: -15px;
-
+    position: relative;
 }
+
+
+
+a.user::before{
+     content: "\1f468";
+     position: absolute;
+     bottom: 13px;
+     left: 20px;
+     display: block;
+     font-family: symbols-technomart;
+     color: #000000;
+     opacity: 0.3;
+ }
+
+a.user:hover::before, a.user:hover::after{
+    opacity: 1;
+}
+
+a.user:active::before, a.user:active::after, a.offers:active, a.personal-account:active, a.user:active{
+    opacity: 0.3;
+}
+
+a.user::after{
+    content:"\241b";
+    position: absolute;
+    bottom: 13px;
+    right: 10px;
+    display: block;
+    font-family: symbols-technomart;
+    color: #000000;
+    opacity: 0.3;
+}
+
 a.offers, a.personal-account{
     color: #32425c;
     font-size: 16px;
@@ -499,22 +545,56 @@ a.offers:hover, a.personal-account:hover{
 .breadcrumbs {
     font-size: 0;
     padding-top: 25px;
-margin-left: -40px;
+   margin-left: -20px;
+
+}
+.home-page{
+    position: relative;
+}
+
+.home-page::before{
+    content: "\1f3e0";
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    display: block;
+    font-family: symbols-technomart;
+    color: #000000;
+    opacity: 0.3;
+    font-size: 16px;
+}
+
+.breadcrumbs a::before{
+    content:"\3e";
+    position: absolute;
+    bottom: 0;
+    right: 18px;
+    display: block;
+    font-family: symbols-technomart;
+    color: #000000;
+    opacity: 0.3;
 }
 
 .breadcrumbs li {
     display: inline-block;
     vertical-align: top;
+    position: relative;
+    font-size: 13px;
+    color: #000000;
+    line-height: 18px;
+    font-family: "PT Sans Regular", 'Arial', sans-serif;
+    text-transform: uppercase;
 }
 
 .breadcrumbs a{
     font-size: 13px;
-    padding-right: 10px;
+    padding-right: 40px;
     color: #000000;
     line-height: 18px;
     font-weight: normal;
     font-family: "PT Sans Regular", 'Arial', sans-serif;
     text-transform: uppercase;
+
 }
 
 .header h1 {
@@ -669,13 +749,15 @@ input[type="checkbox"], input[type="radio"]{
 
 a.button{
     border: 1px solid #e5e5e5;
-    padding: 7px 20px;
+    padding: 7px 30px;
     font-family: PT Sans Regular, 'Arial', sans-serif;
     font-size: 15px;
     line-height: 18px;
     color: #000000;
     text-transform: uppercase;
 }
+
+
 
 .conteiner-right{
     float: right;
@@ -747,6 +829,12 @@ a.button{
     color: #000000;
 }
 .paginator a:active {
+      color: #ffffff;
+      background-color: #ee3643;
+  }
+
+
+.paginator a.active {
     color: #ffffff;
     background-color: #ee3643;
 }
@@ -769,7 +857,6 @@ a.button{
 
 section.info{
     background-color: #f2f6f8;
-
 }
 
 h3{
@@ -852,16 +939,47 @@ position: relative;
 
 }
 
+.promo-item-materials::after{
+    content: '';
+    position: absolute;
+    top:35px;
+    right: 45px;
+    background: url("../img/sprite.png") 0 -135px no-repeat;
+    width: 44px;
+    height: 65px;
+}
+
 .promo-item-tools{
     float: left;
     background-color: #4aafde ;
 }
 
+.promo-item-tools::after{
+    content: '';
+    position: absolute;
+    top:40px;
+    right: 25px;
+    background: url("../img/sprite.png") 0 -262px no-repeat;
+    width: 75px;
+    height: 61px;
+}
 
 .promo-item-tech{
     float: right;
     background-color: #cc79d1;
 }
+
+.promo-item-tech::after{
+    content: '';
+    position: absolute;
+    top:40px;
+    right: 25px;
+    background: url("../img/sprite.png") 0 -200px no-repeat;
+    width: 78px;
+    height: 62px;
+}
+
+
 
 .promo-bottom{
 
@@ -896,6 +1014,7 @@ position: relative;
 a.button-catalog{
     position: absolute;
     bottom: -140px;
+    left: 10px;
     color: #ffffff;
     background-color: #ee3643;
     border: none;
@@ -904,7 +1023,10 @@ a.button-catalog{
     line-height: 18px;
     border-radius: 5%;
     text-align: center;
-
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
 a.button:hover{
     background-color: #ca2c37;
@@ -919,14 +1041,32 @@ a.button:active{
     width: 300px;
 }
 .promo-item-sale{
-
     background-color: #85d179;
+}
+
+.promo-item-sale::after{
+    content: '';
+    position: absolute;
+    top:30px;
+    right: 25px;
+    background: url("../img/sprite.png") 0 0 no-repeat;
+    width: 59px;
+    height: 72px;
 }
 
 .promo-item-delivery{
     background-color: #f6b22d;
 }
 
+.promo-item-delivery::after{
+    content: '';
+    position: absolute;
+    top:40px;
+    right: 25px;
+    background: url("../img/sprite.png") 0 -72px no-repeat;
+    width: 78px;
+    height: 63px;
+}
 
 section .popular{
 
@@ -1239,7 +1379,7 @@ margin-right: 0;
 
 .slider{
     height: 522px;
-    background: #f2f6f8 url("../img/layer 131.png") 750px 250px no-repeat;
+    background: #f2f6f8 url("../img/Layer 131.png") 750px 250px no-repeat;
     font-family: "Cuprum Regular", 'Arial', sans-serif;
 }
 
@@ -1363,14 +1503,24 @@ font-family: "Cuprum Regular", 'Arial', sans-serif;
 }
 
 .info-company li{
-font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", 'Arial', sans-serif;
     list-style: none;
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 18px;
+position: relative;
 }
 
-
+.info-company li::before{
+    content: '';
+    background: url("../img/red-dash.png") 0 0 no-repeat;
+    position: absolute;
+    top: 10px;
+    left: -36px;
+    display: block;
+    width: 25px;
+    height: 2px;
+}
 
 
 a.button-1{
@@ -1550,6 +1700,7 @@ a.button-1:active{
     background-color: #293449;
     min-height: 65px;
     padding-top: 40px;
+
 }
 
 
@@ -1577,21 +1728,49 @@ a.button-1:active{
      vertical-align: top;
      border: 1px solid transparent;
      border-radius: 50%;
-
      background-color: #212a3a;
+    position: relative;
 }
+
+
+
+
 
 .social-btn:hover{
     background-color: #ee3643;
 }
-.social-btn-vk{
 
+.facebook::after{
+    content:"\66";
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    display: block;
+    font-family: symbols-technomart;
+    color: #ffffff;
+    font-size: 18px;
 }
-.social-btn-fb{
 
+.instagramm::after{
+    content: "\1f4f7";
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    display: block;
+    font-family: symbols-technomart;
+    color: #ffffff;
+    font-size: 18px;
 }
-.social-btn-inst{
 
+.vk::after{
+    content: "\76";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    font-family: symbols-technomart;
+    color: #ffffff;
+    font-size: 18px;
 }
 
 
@@ -1612,6 +1791,9 @@ a.cite{
     color: #ffd180;
 }
 
-a.cite:hover{
+a.cite:active{
     color:#ee3643;
+}
+a.cite:hover:not(:active){
+    text-decoration: underline;
 }
