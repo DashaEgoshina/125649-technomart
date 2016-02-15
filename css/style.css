@@ -286,14 +286,14 @@ a.cart{
 }
 
 a.cart::before{
-    content: "\1f516";
+    content: "\62";
     position: absolute;
     bottom: 13px;
     left: 25px;
     display: block;
     font-family: symbols-technomart;
     color: #ffffff;
-    opacity: 0.8;
+    opacity: 0.3;
 }
 
 
