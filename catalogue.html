@@ -8,15 +8,16 @@
 </head>
 <body>
 <header class="main-header">
-    <div class="header-top clearfix">
-        <div class="container">
+    <div class="header-top">
+        <div class="container clearfix">
             <a class="button-top-logo" href="#">техномарт</a>
             <div class="header-top-search">
-                <input type="search" placeholder="Поиск:">
+                <span  class="icon-search"></span>
+                 <input type="search" placeholder="Поиск:">
             </div>
             <div class="header-top-nav">
-                <a class="bookmarks" href="#">Закладки: 0</a>
-                <a class="cart" href="#">Корзина: 10</a>
+                <a class="bookmarks" href="#"><span class="icon-bookmark"></span>Закладки: 0</a>
+                <a class="cart" href="#"><span class="icon-basket"></span>Корзина: 10</a>
                 <a class="action" href="#">Оформить заказ</a>
             </div>
         </div>
@@ -27,11 +28,11 @@
                 <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
             </div>
             <div class="header-center-contacts">
-                <div class="phone">+7(812)555-05-55</div>
+                <div class="phone"><span class="icon-phone"></span>+7(812)555-05-55</div>
                 <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
             </div>
             <div class="header-center-userblock">
-                <a class="user" href="#">Равшан Джамшутович</a>
+                <a class="user" href="#"><span class="icon-user"></span>Равшан Джамшутович<span class="icon-logout"></span> </a>
                 <a class="offers" href="#">Мои заказы</a>
                 <a class="personal-account" href="#">Личный кабинет</a>
             </div>
@@ -56,10 +57,10 @@
     <div class="container">
         <div class="breadcrumbs">
             <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#">каталог</a></li>
-                <li><a href="#">инструмент</a></li>
-                <li><a href="#">перфораторы</a></li>
+                <a href="index.html"><span class="icon-home"></span></a>
+                <li><a href="#"><span class="icon-right"></span>каталог</a></li>
+                <li><a href="#"><span class="icon-right"></span>инструмент</a></li>
+                <li><a href="#"><span class="icon-right"></span>перфораторы</a></li>
             </ul>
         </div>
         <div class="header">
@@ -91,26 +92,31 @@
                         <h2>производители:</h2>
 
                         <div class="filter-checkbox">
+                            <span class="icon-check-on"></span>
                             <label for="bosch">bosch</label>
                             <input type="checkbox" id="bosch" checked>
                         </div>
 
                         <div class="filter-checkbox">
+                            <span class="icon-check-off"></span>
                             <label for="interscop">интерскоп</label>
                             <input type="checkbox" id="interscop">
                         </div>
 
                         <div class="filter-checkbox">
+                            <span class="icon-check-on"></span>
                             <label for="makita">makita</label>
                             <input type="checkbox" id="makita" checked>
                         </div>
 
                         <div class="filter-checkbox">
+                            <span class="icon-check-off"></span>
                             <label for="dewalt">dewalt</label>
                             <input type="checkbox" id="dewalt">
                         </div>
 
                         <div class="filter-checkbox">
+                            <span class="icon-check-off"></span>
                             <label for="hitachi">hitachi</label>
                             <input type="checkbox" id="hitachi">
                         </div>
@@ -119,11 +125,13 @@
                     <div class="filter-power">
                         <h2>питание:</h2>
                         <div class="filter-radio">
+                            <span class="icon-circle-dot"></span>
                             <label for="accumulator">аккумуляторные</label>
                             <input type="radio" id="accumulator" checked>
                         </div>
 
                         <div class="filter-radio">
+                            <span class="icon-circle"></span>
                             <label for="jack">сетевые</label>
                             <input type="radio" id="jack">
                         </div>
@@ -139,12 +147,8 @@
                         <li><a class="sort-price active" href="#">по цене</a></li>
                         <li><a class="sort-type" href="#">по типу</a></li>
                         <li><a class="sort-function" href="#">по функционалу</a></li>
-                        <li>
-                            <div class="sort-low-to-hight active"></div>
-                        </li>  <!--пустые дивы для стрелочек -->
-                        <li>
-                            <div class="sort-hight-to-low"></div>
-                        </li>
+                        <a class="controls" href="#"><span class="icon-up-dir"></span></a>  <!--пустые дивы для стрелочек -->
+                        <a class="controls" href="#"><span class="icon-down-dir"></span></a>
                     </ul>
                 </div>
                 <div class="items">
@@ -172,11 +176,14 @@
                         <div class="item-price-last">30500 Р.</div>
                         <div class="item-price-new">25500 Р.</div>
                     </article>
-                    <article class="item active new">
+                    <article class="item new nosale">
                         <!-- добавила класс new для общей стилизации товаров с меткой new-->
                         <div class="actions">
                             <a href="#" class="btn buy">Купить</a>    <!-- кнопки скрываются в неактивном состоянии-->
                             <a href="#" class="btn bookmark">В закладки</a>
+                        </div>
+                        <div class="item-image">  <!-- img скрываeтся в неактивном состоянии-->
+                            <img src="img/18927.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                         </div>
                         <div class="item-title">Перфоратор <span>bosch bfg 2000</span></div>
                         <div class="item-price-new">12500 Р.</div>
@@ -205,7 +212,7 @@
                         <div class="item-price-last">30500 Р.</div>
                         <div class="item-price-new">25500 Р.</div>
                     </article>
-                    <article class="item">
+                    <article class="item nosale">
                         <div class="actions">
                             <a href="#" class="btn buy">Купить</a>    <!-- кнопки скрываются в неактивном состоянии-->
                             <a href="#" class="btn bookmark">В закладки</a>
@@ -240,7 +247,7 @@
                         <div class="item-price-last">30500 Р.</div>
                         <div class="item-price-new">25500 Р.</div>
                     </article>
-                    <article class="item">
+                    <article class="item nosale">
                         <div class="actions">
                             <a href="#" class="btn buy">Купить</a>    <!-- кнопки скрываются в неактивном состоянии-->
                             <a href="#" class="btn bookmark">В закладки</a>
@@ -315,12 +322,12 @@
                 <div> Все права защищены</div>
             </div>
             <div class="footer-bottom-social">
-                <a class="social-btn social-btn-vk" href="#"></a>
-                <a class="social-btn social-btn-fb" href="#"></a>
-                <a class="social-btn social-btn-inst" href="#"></a>
+                <a class="social-btn social-btn-vk icon-vk" href="#"></a>
+                <a class="social-btn social-btn-fb icon-facebook" href="#"></a>
+                <a class="social-btn social-btn-inst icon-instagramm" href="#"></a>
             </div>
 
-            <div class="footer-bottom-develop"
+            <div class="footer-bottom-develop">
                 <span>Разработано -</span>
                 <a class="cite" href="https://htmlacademy.ru">htmlacademy.ru</a>
              </div>
