@@ -70,17 +70,43 @@
                 </div>
             </div>
             <div class="promo-bottom clearfix">
+
+
                 <div class="promo-slider">
-                    <img src="img/layer 99.jpg" width="620" height="266" alt="перфораторы">
-                    <div class="promo-info">
-                        <span>Перфораторы</span>
-                        <p> Настоящие мужские игрушки</p>
-                        <span class=" icon-left"></span>
-                        <span class="icon-right"></span>
-                        <a class="button button-catalog" href="#">открыть каталог</a>
+
+                    <input type="radio" id="btn-1" name="toggle" checked>
+                    <input type="radio" id="btn-2" name="toggle">
+
+                    <div class="promo-slider-controls">
+                        <label for="btn-1"></label>
+                        <label for="btn-2"></label>
                     </div>
 
+                    <div class="promo-slides">
+
+                        <div class="promo-slide">
+                            <div class="promo-info">
+                                <span>перфораторы</span>
+                                <div>Настоящие мужские игрушки</div>
+                                <!--  <span class=" icon-left"></span>
+                                <span class="icon-right"></span>   -->
+                                <a class="button button-catalog" href="#">открыть каталог</a>
+                            </div>
+                        </div>
+
+                        <div class="promo-slide">
+                            <div class="promo-info">
+                                <span>дрели</span>
+                                <div>Соседям на радость!</div>
+                                <!--  <span class=" icon-left"></span>
+                                <span class="icon-right"></span>   -->
+                                <a class="button button-catalog" href="#">открыть каталог</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
                 <div class="promo-items">
                     <div class="promo-item promo-item-sale">
                         <span class="promo-name">Скидки 50%</span>
@@ -159,47 +185,71 @@
             <div class="popular-manufacturers">
                 <div><a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="bosch"></a></div>
                 <div><a href="#"><img src="img/makita.jpg" width="123" height="40" alt="makita"></a></div>
-                <div><a href="#"><img src="img/DeWALT.jpg" width="146" height="44" alt="dewalt"></a></div>
-                <div><a href="#"><img src="img/Интерскол.jpg" width="200" height="88" alt="интерскол"></a></div>
-                <div><a href="#"><img src="img/Hitachi.jpg" width="169" height="31" alt="hitachi"></a></div>
-                <div><a href="#"><img src="img/LG.jpg" width="121" height="73" alt="LG"></a></div>
-                <div><a href="#"><img src="img/AEG.jpg" width="151" height="96" alt="AEG"></a></div>
-                <div><a href="#"><img src="img/Metabo.jpg" width="204" height="69" alt="metabo"></a></div>
+                <div><a href="#"><img src="img/dewalt.jpg" width="146" height="44" alt="dewalt"></a></div>
+                <div><a href="#"><img src="img/interscol.jpg" width="200" height="88" alt="интерскол"></a></div>
+                <div><a href="#"><img src="img/hitachi.jpg" width="169" height="31" alt="hitachi"></a></div>
+                <div><a href="#"><img src="img/lg.jpg" width="121" height="73" alt="LG"></a></div>
+                <div><a href="#"><img src="img/aeg.jpg" width="151" height="96" alt="AEG"></a></div>
+                <div><a href="#"><img src="img/metabo.jpg" width="204" height="69" alt="metabo"></a></div>
             </div>
         </section>
     </div>
-    <section class="slider clearfix">
+    <section class="clearfix slider2">
         <div class="container">
             <div class="service">
                 <h2>сервисы</h2>
                 <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы
-                    сделать
-                    ваши покупки приятными.</p>
+                    сделать ваши покупки приятными.</p>
             </div>
 
-            <div class="clearfix">
+
+            <div class="slider clearfix">
+
+                <input type="radio" id="btn1" name="toggle" checked>
+                <input type="radio" id="btn2" name="toggle">
+                <input type="radio" id="btn3" name="toggle">
+
                 <ul class="slider-nav">
                     <li>
-                        <a class="active" href="#">Доставка</a>
+                        <label for="btn1">Доставка</label>
                     </li>
                     <li>
-                        <a href="#">Гарантия</a>
+                        <label for="btn2">Гарантия</label>
                     </li>
                     <li>
-                        <a href="#">Кредит</a>
+                        <label for="btn3">Кредит</label>
                     </li>
                 </ul>
+
                 <div class="slider-slides">
-                    <div class="delivery">
-                        <h2 class="slides-title">доставка</h2>
-                        <!---добавила класс для h2 т.к. он отличается от остальных h2 -->
-                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
-                            неплохо
-                            заработаем, поднимая его на ваш этаж!</p>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <h2 class="slides-title">доставка</h2>
+                            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+                            неплохо заработаем, поднимая его на ваш этаж!</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-text">
+                            <h2 class="slides-title">гарантия</h2>
+                            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
+                                вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                                Дом уж восстановите как-нибудь сами.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-text">
+                            <h2 class="slides-title">кредит</h2>
+                            <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                        </div>
                     </div>
                 </div>
-         </div>   </div>
+            </div>
+        </div>
     </section>
+
     <div class="container">
         <section class="info-tehnomart clearfix">
             <div class="info-company">
@@ -221,7 +271,7 @@
                 <h2>контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис:</p>
                 <a href="#">
-                    <img class="map" src="img/Слой%205.jpg" width="300" height="188" alt="Большая Конюшенная ул.,19">
+                    <img class="map" src="img/map.jpg" width="300" height="188" alt="Большая Конюшенная ул.,19">
                 </a>
                 <a class="button-1" href="#">заблудились? напишите нам!</a>
             </div>
