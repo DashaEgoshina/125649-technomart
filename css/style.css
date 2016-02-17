@@ -86,7 +86,7 @@ font-family: "PT Sans Regular";
 
 .icon-search{
     position: absolute;
-color: gray;
+    color: #6a7180;
     right: 208px;
     bottom: 13px;
 }
@@ -95,8 +95,8 @@ color: gray;
     color: #ffffff;
 }
 
-.header-top-search:focus .icon-search{
-    color: red;
+.header-top-search input[type="search"]:focus + span{
+    color: #ee3643;
 }
 
 .icon-up-dir, .icon-down-dir{
@@ -113,18 +113,6 @@ color: gray;
     color: #ee3643;
 }
 
-
-.icon-left{
-    position: absolute;
-    left: -16px;
-    top: 100px;
-
-}
-.icon-right{
-   position: absolute;
-    right: -360px;
-    top: 100px;
-}
 
 
 
@@ -1101,8 +1089,8 @@ margin-bottom: 30px;
     font-size: 21px;
     line-height: 30px;
     display: block;
-    box-shadow:inset  1px -2px 1px -1px #405069,
-    inset  1px -2px 1px -1px #293449;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: left;
@@ -1116,7 +1104,6 @@ margin-bottom: 30px;
 .slider-nav label.active{
     background-color: #ffffff;
     color: #32425c;
-    box-shadow: none;
 }
 
 .slider-nav::after{
@@ -1191,10 +1178,14 @@ margin-bottom: 30px;
 #btn3:checked ~ .slider-nav label[for="btn3"] {
     background: #ffffff;
     color: #32425c;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
 }
 
 
 /*promo-slider*/
+
+
 
 
 .promo-slider{
@@ -1214,6 +1205,29 @@ margin-bottom: 30px;
     width: 100%;
     height: 270px;
 }
+
+
+
+
+
+.icon-left{
+    position: absolute;
+    left: 10px;
+    top: 110px;
+    cursor: pointer;
+    z-index: 10;
+}
+.icon-right{
+    position: absolute;
+    right: 10px;
+    top: 110px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+
 
 .promo-slider input[type="radio"]{
     display: none;
@@ -1324,12 +1338,14 @@ a.button:active{
 }
 
 
-
-
 #btn-1:checked ~ .promo-slider-controls label[for="btn-1"],
 #btn-2:checked ~ .promo-slider-controls label[for="btn-2"] {
     background: #ba2732;
 }
+
+
+
+
 
 
 
@@ -1603,6 +1619,18 @@ a.button-popular{
 background-color: #5fbb2d;
 }
 
+a.buy:hover::before{
+    color: #ffffff;
+    opacity: 1;
+}
+
+a.buy:active::before{
+    color: #ffffff;
+    opacity: 1;
+}
+
+
+
 .actions .buy:active{
 background-color: #518534;
 }
@@ -1636,10 +1664,11 @@ background-color: #518534;
 .actions .buy::before {
     content:  "\62";
     position: absolute;
-    bottom: 13px;
-    left: 25px;
+    bottom: 11px;
+    left: 15px;
     display: block;
     font-family: symbols-technomart;
+    text-transform: none;
     color: #ffffff;
     opacity: 0.3;
 }
@@ -1680,6 +1709,7 @@ margin-right: 0;
 .popular-manufacturers div:active{
     border: 1px solid #ffffff;
     box-shadow: 0 5px 25px 0 rgba(41, 52, 73,0.30);
+    opacity: 0.3;
 }
 
 
