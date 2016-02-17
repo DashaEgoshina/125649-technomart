@@ -102,6 +102,7 @@ font-family: "PT Sans Regular";
 .icon-up-dir, .icon-down-dir{
     color: #b7bfc8;
     font-size: 22px;
+
 }
 
 .icon-up-dir:hover, .icon-down-dir:hover{
@@ -328,6 +329,10 @@ a.action:hover{
     line-height: 23px;
 }
 
+.header-center-about p{
+    margin: 0;
+}
+
 .header-center-contacts{
     float: left;
     width: 270px;
@@ -349,7 +354,7 @@ a.action:hover{
     content:  "\1f4de";
     position: absolute;
     bottom: 13px;
-    left: 25px;
+    left: 15px;
     display: block;
     font-family: symbols-technomart;
     color: #000000;
@@ -456,7 +461,7 @@ a.user::before{
      content: "\1f468";
      position: absolute;
      bottom: 13px;
-     left: 20px;
+     left: 24px;
      display: block;
      font-family: symbols-technomart;
      color: #000000;
@@ -467,7 +472,7 @@ a.user:hover::before, a.user:hover::after{
     opacity: 1;
 }
 
-a.user:active::before, a.user:active::after, a.offers:active, a.personal-account:active, a.user:active{
+a.user:active span, a.user:active::before, a.user:active::after, a.offers:active, a.personal-account:active{
     opacity: 0.3;
 }
 
@@ -487,11 +492,24 @@ a.offers, a.personal-account{
     font-size: 16px;
     line-height: 26px;
     text-decoration: underline;
-    margin-left: 15px;
-    padding-right: 15px;
+    margin-left: 20px;
+    padding-right: 20px;
 }
 a.offers:hover, a.personal-account:hover{
-    color: #ee3643;}
+    color: #ee3643;
+}
+
+a.personal-account{
+    position: relative;
+}
+a.personal-account::before{
+    content: '';
+    border: 2px solid #32425c;
+    border-radius: 50%;
+    position: absolute;
+    top:5px;
+    left:-23px;
+}
 
 .header-navigation{
     border: 5px solid #293449;
@@ -693,7 +711,7 @@ h2{
     text-align:center;
     color:#283136;
     border-radius:5px;
-
+    outline: none;
 }
 
 .price-controls{
@@ -820,6 +838,18 @@ a.button{
     text-transform: uppercase;
 }
 
+
+a.button.submit:hover{
+    border: 1px solid #bdc6ca;
+    background-color: #ffffff;
+}
+
+a.button.submit:active{
+    border: 1px solid #ee3643;
+    background-color: #ffffff;
+}
+
+
 .conteiner-right{
     float: right;
     width: 700px;
@@ -839,27 +869,34 @@ a.button{
     vertical-align: top;
 }
 
+ul.sort{
+
+}
+
+
 .sort li span{
     padding-right: 60px;
 }
+
 
 .sort-navigation li{
     display: inline-block;
     background-color: #f7f3ec;
     padding-right: 60px;
+    vertical-align: top;
 }
 
 .sort li:last-of-type{
     padding-right: 30px;
 }
 
-.sort-navigation a:not(.controls){
+a.sort-price, a.sort-type, a.sort-function{
     color: gainsboro;
     border-bottom: 1px dashed #ee3643;
 
 }
 
-.sort-navigation a:hover:not(.controls){
+a.sort-price:hover, a.sort-type:hover, a.sort-function:hover{
     color: #000000;
     border-bottom: 1px solid #ee3643;
 }
@@ -870,10 +907,12 @@ a.button{
 }
 
 
+
 .paginator{
     font-size: 0;
     vertical-align: top;
     margin-top: 50px;
+    margin-bottom: 60px;
     padding-left: 0;
 }
 .paginator a {
@@ -889,18 +928,20 @@ a.button{
     padding: 10px 0px;
     color: #000000;
 }
-.paginator a:active {
-      color: #ffffff;
-      background-color: #ee3643;
-  }
 
+.paginator li a:active:not(.active) {
+    border: 1px solid #ee3643;
+    border-radius: 5%;
+  }
 
 .paginator a.active {
     color: #ffffff;
     background-color: #ee3643;
+    cursor: default;
 }
 
-.paginator a:hover{
+
+.paginator a:hover:not(.active) {
     border: 1px solid #bdc6ca;
 }
 
@@ -920,6 +961,8 @@ section.info{
     background-color: #f2f6f8;
 }
 
+
+
 h3{
     font-family: "Cuprum Regular", 'Arial', sans-serif;
     line-height: 30px;
@@ -927,6 +970,8 @@ h3{
     text-transform: uppercase;
     color: #000000;
     padding-top: 65px;
+    padding-bottom: 25px;
+    margin: 0;
 
 }
 
@@ -936,7 +981,7 @@ h3{
     font-family: "Cuprum Regular", 'Arial', sans-serif;
     padding-bottom: 70px;
     font-size: 14px;
-
+    margin: 0;
 }
 
 /* index */
@@ -1845,6 +1890,7 @@ a.button-2:active{
 
 .info-contacts img{
     padding-bottom: 40px;
+
 }
 
 /* footer */
@@ -2078,3 +2124,207 @@ a.cite:active{
 a.cite:hover:not(:active){
     text-decoration: underline;
 }
+
+
+
+/* Всплывающая форма catalog */
+
+
+.modal-content{
+    width: 620px;
+    color: #000000;
+    position: absolute;
+    top: 413px;
+    left: 50%;
+    margin-left: -305px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+    border-top: 7px solid red;
+    background: #ffffff url("../img/green-circle.png") 80px 48px no-repeat;
+
+    display: none;
+
+}
+
+
+.modal-content-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    width: 30px;
+    height: 30px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+
+
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+    content: "";
+    position: absolute;
+
+    width: 25px;
+    height: 4px;
+    background-color: red;
+    border-radius: 1px;
+
+    top: 12px;
+    left: 2px;
+}
+
+.modal-content-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+    transform: rotate(-45deg);
+}
+
+h2.modal-content-title {
+    font-size: 30px;
+    line-height: 18px;
+    text-transform: none;
+
+font-family: "Cuprum Regular", 'Arial', sans-serif;
+    margin-bottom: 69px;
+    margin-top: 69px;
+    margin-left: 178px;
+}
+
+.modal-bottom{
+    padding-top: 41px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #f1f1f1;
+  padding-bottom: 41px;
+}
+
+a.close{
+ color: #000000;
+    background-color: #ffffff;
+    padding: 10px 40px;
+    margin-left: 20px;
+
+}
+
+a.close:hover{
+    background-color: #ffffff;
+}
+
+
+/* Всплывающая форма index */
+
+.modal-content-index {
+    position: absolute;
+    top: 2471px;
+    left: 50%;
+
+    width: 620px;
+    border-top: 7px solid red;
+
+    margin-left: -306px;
+    color: #000000;
+
+    background-color: #ffffff;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+    display: none;
+}
+
+form.message{
+    display: inline-block;
+    margin-top: 45px;
+    margin-bottom: 35px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: block;
+}
+
+.message input{
+    min-width: 206px;
+    padding-top: 5px ;
+    padding-bottom: 5px ;
+    padding-left: 10px;
+    outline: none;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: PT Sans Regular, 'Arial', sans-serif;
+    border:2px solid gainsboro;
+    border-radius: 5%;
+    margin-bottom: 20px;
+
+}
+
+.message label{
+    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+
+}
+
+.message textarea{
+    border:2px solid gainsboro;
+    border-radius: 3%;
+    width: 440px;
+    min-height: 110px;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: PT Sans Regular, 'Arial', sans-serif;
+    margin-top: 10px;
+}
+
+.modal-bottom input[type="submit"]{
+    background-color: #ee3643;
+    color: #ffffff;
+    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 5%;
+    border: none;
+padding: 10px 200px;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+.modal-bottom input[type="submit"]:hover {
+    background-color: #ba2732;
+}
+
+.modal-bottom input[type="submit"]:active {
+    background-color: #ba2732;
+}
+
+
+/* map */
+
+.modal-content-map {
+    width: 940px;
+    height: 446px;
+
+    background: #e9e5dc url("../img/big-map.jpg");
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+
+    margin-top: 1674px;
+    margin-left: -470px;
+
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+
+    display: none;
+
+}
+
