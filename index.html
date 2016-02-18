@@ -13,12 +13,12 @@
             <span class="button-top-logo">техномарт</span>
             <form class="header-top-search">
                 <input type="search" placeholder="Поиск:">
-                <span  class="icon-search"></span>
+                <span class="icon-search"></span>
             </form>
             <div class="header-top-nav">
-                <a class="bookmarks" href="#">Закладки: 0</a>
-                <a class="cart" href="#">Корзина: 10</a>
-                <a class="action" href="#">Оформить заказ</a>
+                <a class="bookmarks" href="#"><span>Закладки: 0</span></a>
+                <a class="cart" href="#"><span>Корзина: 10</span></a>
+                <a class="action" href="#"><span>Оформить заказ</span></a>
             </div>
         </div>
     </div>
@@ -39,9 +39,9 @@
 
         <div class="header-navigation clearfix">
             <ul>
-                <li><a href="#">Главная</a></li>
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="#">Компания</a></li>
-                <li><a href="#">Каталог</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Спецпредложения</a></li>
                 <li><a href="#">Доставка</a></li>
@@ -57,7 +57,7 @@
         <section class="promo clearfix">
             <div class="promo-top clearfix">
                 <div class="promo-item promo-item-materials new">
-                <span class="promo-name">Материалы</span>
+                    <span class="promo-name">Материалы</span>
                     <a class="promo-btn" href="#">на любой вкус</a>
                 </div>
                 <div class="promo-item promo-item-tools">
@@ -82,6 +82,10 @@
                         <label for="btn-2"></label>
                     </div>
 
+                    <div class="promo-slider-arrows">
+                        <label for="btn-1"> <span class="icon-left"></span> </label>
+                        <label for="btn-2"> <span class="icon-right"></span> </label>
+                    </div>
                     <div class="promo-slides">
 
                         <div class="promo-slide">
@@ -89,10 +93,7 @@
                                 <span>перфораторы</span>
                                 <div>Настоящие мужские игрушки</div>
 
-                                <label for="btn-1"> <span class="icon-left"></span> </label>
-                                <label for="btn-2"> <span class="icon-right"></span>
-
-                                <a class="button button-catalog" href="#">открыть каталог</a> </label>
+                                <a class="button button-catalog" href="#">открыть каталог</a>
                             </div>
                         </div>
 
@@ -100,8 +101,6 @@
                             <div class="promo-info">
                                 <span>дрели</span>
                                 <div>Соседям на радость!</div>
-                                  <span class=" icon-left"></span>
-                                <span class="icon-right"></span>
                                 <a class="button button-catalog" href="#">открыть каталог</a>
                             </div>
                         </div>
@@ -168,7 +167,8 @@
                     <div class="item-price-new">25500 Р.</div>
                 </article>
 
-                <article class="popular-item new nosale"> <!-- добавила класс new для общей стилизации товаров с меткой new-->
+                <article class="popular-item new nosale">
+                    <!-- добавила класс new для общей стилизации товаров с меткой new-->
                     <div class="actions">
                         <a href="#" class="btn buy">Купить</a>    <!-- кнопки скрываются в неактивном состоянии-->
                         <a href="#" class="btn bookmark">В закладки</a>
@@ -227,15 +227,17 @@
                     <div class="slide">
                         <div class="slide-text">
                             <h2 class="slides-title">доставка</h2>
-                            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
-                            неплохо заработаем, поднимая его на ваш этаж!</p>
+                            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
+                                мы
+                                неплохо заработаем, поднимая его на ваш этаж!</p>
                         </div>
                     </div>
 
                     <div class="slide">
                         <div class="slide-text">
                             <h2 class="slides-title">гарантия</h2>
-                            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
+                            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара,
+                                спровоцированного его возгаранием,
                                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
                                 Дом уж восстановите как-нибудь сами.</p>
                         </div>
@@ -263,9 +265,9 @@
                     транспортными
                     компаниями:</p>
                 <ul>
-                  <li class="info-company-delivery">Деловые линии</li>
-                  <li class="info-company-delivery">Автотрейдинг</li>
-                  <li class="info-company-delivery">ЖелДорЭкспедиция</li>
+                    <li class="info-company-delivery">Деловые линии</li>
+                    <li class="info-company-delivery">Автотрейдинг</li>
+                    <li class="info-company-delivery">ЖелДорЭкспедиция</li>
                 </ul>
                 <a class="button-1" href="#">подробнее о компании</a>
             </div>
@@ -338,39 +340,40 @@
 </footer>
 
 
- <div class="modal-content-index">
-    <div class="modal-top">
-        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    </div>
+<div class="modal-content-index">
 
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 
     <form class="message">
-        <label>Ваше имя:
-            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-        </label>
+<div class="modal-top">
+        <div class="message-item">
+            <label for="name" >Ваше имя:</label>
+            <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </div>
 
+        <div class="message-item">
+            <label for="email">Ваш e-mail: </label>
+            <input id="email" type="text" name="e-mail" placeholder="Для отправки ответа">
+        </div>
 
-        <label>Ваш e-mail:
-            <input type="text"  name="e-mail" placeholder="Для отправки ответа">
-        </label>
-
-        <label>Текст письма:
-           <textarea>В свободной форме</textarea>
-        </label>
+        <div class="message-text">
+            <label>Текст письма:</label>
+            <textarea placeholder="В свободной форме"></textarea>
+        </div>
+</div>
+        <div class="modal-bottom">
+            <input type="submit" value="отправить">
+        </div>
     </form>
 
-     <div class="modal-bottom">
-         <input type="submit" value="отправить">
-     </div>
-</div>
 
+</div>
 
 
 <div class="modal-content-map">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <div id="yandex-map"></div>
 </div>
-
 
 
 </body>
