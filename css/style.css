@@ -138,7 +138,10 @@ a {
     clear: both;
 }
 
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 /* header */
 
 .main-header {
@@ -528,7 +531,7 @@ a.personal-account::before{
     font-size: 0;
 }
 .header-navigation li{
-   display: inline-block;
+    display: inline-block;
     vertical-align: top;
 
 }
@@ -564,7 +567,7 @@ a.personal-account::before{
 .breadcrumbs {
     font-size: 0;
     padding-top: 25px;
-   margin-left: -20px;
+    margin-left: -20px;
 
 }
 .home-page{
@@ -861,39 +864,39 @@ a.button.submit:active{
     line-height: 18px;
     background-color: #f7f3ec;
     text-transform: uppercase;
-
     padding-top: 2px;
     height: 45px;
     text-align: left;
-
     vertical-align: top;
 }
 
-ul.sort{
-
+.sort-navigation ul{
+    padding-left: 20px;
 }
 
 
-.sort li span{
-    padding-right: 60px;
-}
-
-
-.sort-navigation li{
+.sort-navigation li {
     display: inline-block;
     background-color: #f7f3ec;
-    padding-right: 60px;
+    padding-right: 65px;
     vertical-align: top;
 }
 
-.sort li:last-of-type{
+.sort-navigation li:first-child{
+    padding-right: 135px;
+}
+
+.sort li:nth-child(4){
     padding-right: 30px;
+}
+
+.sort li:nth-child(5), .sort li:nth-child(6)  {
+    padding-right: 0;
 }
 
 a.sort-price, a.sort-type, a.sort-function{
     color: gainsboro;
     border-bottom: 1px dashed #ee3643;
-
 }
 
 a.sort-price:hover, a.sort-type:hover, a.sort-function:hover{
@@ -1087,7 +1090,7 @@ padding-top: 60px;
 
 
 .promo-bottom{
-margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -1661,7 +1664,7 @@ a.button-popular{
 
 
 .actions .buy:hover{
-background-color: #5fbb2d;
+    background-color: #5fbb2d;
 }
 
 a.buy:hover::before{
@@ -1677,7 +1680,7 @@ a.buy:active::before{
 
 
 .actions .buy:active{
-background-color: #518534;
+    background-color: #518534;
 }
 
 .actions .bookmark {
@@ -1733,7 +1736,7 @@ background-color: #518534;
     border: 1px solid #e5e5e5;
     margin-right: 18px;
     margin-top: 20px;
-line-height: 145px;
+    line-height: 145px;
     text-align: center;
 }
 
@@ -1743,7 +1746,7 @@ line-height: 145px;
 }
 
 .popular-manufacturers div:nth-child(4n){
-margin-right: 0;
+    margin-right: 0;
 }
 
 .popular-manufacturers div:hover{
@@ -1813,7 +1816,7 @@ font-family: "Cuprum Regular", 'Arial', sans-serif;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 18px;
-position: relative;
+    position: relative;
 }
 
 .info-company li::before{
@@ -2056,7 +2059,7 @@ a.button-2:active{
      border: 1px solid transparent;
      border-radius: 50%;
      background-color: #212a3a;
-    position: relative;
+     position: relative;
 }
 
 
@@ -2192,7 +2195,7 @@ h2.modal-content-title {
     line-height: 18px;
     text-transform: none;
 
-font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", 'Arial', sans-serif;
     margin-bottom: 69px;
     margin-top: 69px;
     margin-left: 178px;
@@ -2207,7 +2210,7 @@ font-family: "Cuprum Regular", 'Arial', sans-serif;
 }
 
 a.close{
- color: #000000;
+    color: #000000;
     background-color: #ffffff;
     padding: 10px 40px;
     margin-left: 20px;
@@ -2289,7 +2292,7 @@ form.message{
     line-height: 18px;
     border-radius: 5%;
     border: none;
-padding: 10px 200px;
+    padding: 10px 200px;
     outline: none;
     text-align: center;
     text-transform: uppercase;
@@ -2313,7 +2316,7 @@ padding: 10px 200px;
     height: 446px;
 
     background: #e9e5dc url("../img/big-map.jpg");
-    position: absolute;
+
 
     top: 50%;
     left: 50%;
@@ -2324,6 +2327,8 @@ padding: 10px 200px;
 
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
 
+
+    position: absolute;
     display: none;
 
 }
