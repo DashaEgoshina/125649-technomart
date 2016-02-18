@@ -462,6 +462,10 @@ a.action:hover {
     width: 300px;
 }
 
+.header-center-userblock--margin{
+    margin-top:15px;
+}
+
 a.login {
 
     background-color: #ffffff;
@@ -530,8 +534,8 @@ a.user {
     vertical-align: top;
     padding-left: 10px;
     padding-right: 10px;
-    height: 30px;
-    padding-top: 10px;
+    padding-bottom: 13px;
+    padding-top: 13px;
     background-color: #ffffff;
     display: block;
     text-align: center;
@@ -543,9 +547,9 @@ a.user::before {
     content: "\1f468";
     position: absolute;
     bottom: 13px;
-    left: 24px;
+    left: 14px;
     display: block;
-    font-family: symbols-technomart;
+    font-family: "symbols-technomart";
     color: #000000;
     opacity: 0.3;
 }
@@ -554,9 +558,11 @@ a.user:hover::before, a.user:hover::after {
     opacity: 1;
 }
 
-a.user:active span, a.user:active::before, a.user:active::after, a.offers:active, a.personal-account:active {
+.user:active span, a.user:active::before, a.user:active::after, .offers:active, .personal-account:active {
     opacity: 0.3;
 }
+
+
 
 a.user::after {
     content: "\241b";
@@ -564,12 +570,12 @@ a.user::after {
     bottom: 13px;
     right: 10px;
     display: block;
-    font-family: symbols-technomart;
+    font-family: "symbols-technomart";
     color: #000000;
     opacity: 0.3;
 }
 
-a.offers, a.personal-account {
+.offers, .personal-account {
     color: #32425c;
     font-size: 16px;
     line-height: 26px;
@@ -582,16 +588,16 @@ a.offers:hover, a.personal-account:hover {
     color: #ee3643;
 }
 
-a.personal-account {
+.personal-account {
     position: relative;
 }
 
-a.personal-account::before {
+.personal-account::before {
     content: '';
     border: 2px solid #32425c;
     border-radius: 50%;
     position: absolute;
-    top: 5px;
+    top: 8px;
     left: -23px;
 }
 
@@ -913,7 +919,10 @@ a.button {
     line-height: 18px;
     color: #000000;
     text-transform: uppercase;
+    border-radius: 3px;
 }
+
+
 
 a.button.submit:hover {
     border: 1px solid #bdc6ca;
@@ -1587,6 +1596,12 @@ a.button-popular {
     right: -1px;
 }
 
+.item.new::before {
+    top: -1px;
+    right: -1px;
+}
+
+
 .popular-item:hover {
     border: 1px solid #ffffff;
     box-shadow: 0 5px 25px 0 rgba(41, 52, 73, 0.5);
@@ -2145,7 +2160,7 @@ a.cite:hover:not(:active) {
     border-top: 7px solid red;
     background: #ffffff url("../img/green-circle.png") 80px 48px no-repeat;
 
-   /* display: none;*/
+ display: none;
 
 }
 
