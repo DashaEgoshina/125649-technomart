@@ -2177,7 +2177,7 @@ a.cite:hover:not(:active) {
     left: 50%;
     margin-left: -305px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-z-index: 10;
+    z-index: 10;
     border-top: 7px solid red;
     background: #ffffff url("../img/green-circle.png") 80px 48px no-repeat;
     display: none;

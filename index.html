@@ -386,11 +386,11 @@
     var close = popup.querySelector(".modal-content-close");
     var form = popup.querySelector("form");
 
-    var name = popup.querySelector("[name=name]");
+    var login = popup.querySelector("[name=name]");
     var email = popup.querySelector("[name=email]");
     var text = popup.querySelector("[name=text]");
 
-    var storage = localStorage.getItem("name email");
+    var storage = localStorage.getItem("login");
 
 
 
@@ -399,11 +399,11 @@
         popup.classList.add("modal-content-show");
 
         if (storage) {
-            name.value = storage;
+            login.value = storage;
             email.value = storage;
             text.focus();
         } else {
-            name.focus();
+            login.focus();
         }
 
 
@@ -414,6 +414,10 @@
         popup.classList.remove("modal-content-show");
 
     });
+
+
+    localStorage.setItem("login", login.value);
+
 
 
     window.addEventListener("keydown", function(event) {
