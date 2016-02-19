@@ -2347,6 +2347,19 @@ a.close:hover {
     background-color: #ffffff;
 }
 
+
+a.button-2.close:hover {
+    border: 1px solid #bdc6ca;
+    background-color: #ffffff;
+}
+
+a.button-2.close:active {
+    border: 1px solid #ee3643;
+    background-color: #ffffff;
+}
+
+
+
 .message-item {
     display: inline-block;
     vertical-align: top;
