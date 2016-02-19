@@ -196,6 +196,11 @@
     bottom: 13px;
 }
 
+::-webkit-input-placeholder {color:#ffffff;}
+::-moz-placeholder {color:#ffffff;}
+:-moz-placeholder {color:#ffffff;}
+:-ms-input-placeholder {color:#ffffff;}
+
 .header-top-search:hover .icon-search {
     color: #ffffff;
 }
