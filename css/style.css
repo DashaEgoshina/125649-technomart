@@ -1841,7 +1841,7 @@ section.info-tehnomart {
 
 .info-company {
     float: left;
-    width: 540px;
+    width: 570px;
 }
 
 .info-company h2 {
@@ -1856,7 +1856,7 @@ section.info-tehnomart {
 }
 
 .info-company ul {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .info-company li {
@@ -2180,12 +2180,75 @@ a.cite:hover:not(:active) {
 z-index: 10;
     border-top: 7px solid red;
     background: #ffffff url("../img/green-circle.png") 80px 48px no-repeat;
+    display: none;
+}
 
+/* map */
 
+.modal-content-map {
+    width: 940px;
+    height: 446px;
+
+    background: #e9e5dc url("../img/big-map.jpg");
+
+    top: 50%;
+    left: 50%;
+
+    margin-top: 1789px;
+    margin-left: -470px;
+
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+
+    position: absolute;
     display: none;
 
+}
+/* Всплывающая форма index*/
+
+.modal-content-index {
+    position: fixed;
+    top: 150px;
+    left: 50%;
+
+    width: 620px;
+    border-top: 7px solid red;
+
+    margin-left: -306px;
+    color: #000000;
+    z-index: 10;
+    background-color: #ffffff;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    display: none;
 
 }
+
+
+
+
+@keyframes bounce {
+    0%   {
+        transform: translateY(-2000px);
+    }
+    70%  {
+        transform: translateY(30px);
+    }
+    90%  {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
+
+}
+
 
 .modal-content-close {
     position: absolute;
@@ -2271,25 +2334,6 @@ a.close:hover {
     background-color: #ffffff;
 }
 
-/* Всплывающая форма index */
-
-.modal-content-index {
-    position: fixed;
-    top: 150px;
-    left: 50%;
-
-    width: 620px;
-    border-top: 7px solid red;
-
-    margin-left: -306px;
-    color: #000000;
-    z-index: 10;
-    background-color: #ffffff;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-    display: none;
-
-}
-
 .message-item {
     display: inline-block;
     vertical-align: top;
@@ -2333,6 +2377,7 @@ a.close:hover {
     line-height: 18px;
     font-family: PT Sans Regular, 'Arial', sans-serif;
     resize: none;
+    outline: none;
 }
 
 .message-text {
@@ -2370,24 +2415,7 @@ a.close:hover {
     background-color: #ba2732;
 }
 
-/* map */
 
-.modal-content-map {
-    width: 940px;
-    height: 446px;
 
-    background: #e9e5dc url("../img/big-map.jpg");
 
-    top: 50%;
-    left: 50%;
-
-    margin-top: 1789px;
-    margin-left: -470px;
-
-    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
-
-    position: absolute;
-     display: none;
-
-}
 
