@@ -189,7 +189,7 @@
 .icon-search {
     position: absolute;
     color: #6a7180;
-    right: 204px;
+    right: 208px;
     bottom: 13px;
 }
 
@@ -310,7 +310,7 @@ input[type="search"] {
     width: 245px;
     font-size: 17px;
     height: 40px;
-    padding-left: 48px;
+    padding-left: 40px;
     font-family: "Cuprum Regular", 'Arial', sans-serif;
 }
 
@@ -343,21 +343,9 @@ a.bookmarks:hover:not(.indicator), a.cart:hover:not(.indicator) {
     background-color: #212a3a;
 }
 
-a.bookmarks  {
-    padding-bottom: 12px;
-    padding-left: 29px;
-    padding-right: 26px;
-    padding-top: 12px;
-
+a.bookmarks, a.cart {
+    padding: 12px 25px 12px 44px;
 }
-
-a.cart{
-    padding-bottom: 12px;
-    padding-left: 49px;
-    padding-right: 28px;
-    padding-top: 12px;
-}
-
 
 .header-top-nav a:active span {
     opacity: 0.5;
@@ -367,7 +355,7 @@ a.bookmarks::before {
     content: "\1f516";
     position: absolute;
     bottom: 13px;
-    left: 1px;
+    left: 20px;
     display: block;
     font-family: symbols-technomart;
     color: #ffffff;
@@ -382,6 +370,10 @@ a.bookmarks:active::before, a.cart:active::before {
     opacity: 0.3;
 }
 
+a.cart {
+    text-align: right;
+    padding-right: 20px;
+}
 
 a.cart::before {
     content: "\62";
@@ -1081,7 +1073,6 @@ section.promo {
     padding-top: 60px;
 }
 
-
 .promo-item {
     width: 300px;
     height: 125px;
@@ -1373,7 +1364,7 @@ section.promo {
     padding-left: 25px;
     padding-top: 25px;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
 }
 
@@ -1416,7 +1407,6 @@ a.button:hover {
 a.button:active {
     background-color: #ba2732;
 }
-
 
 #btn-1:checked ~ .promo-slides .promo-slide:nth-child(1) {
     left: 0;
@@ -2371,7 +2361,7 @@ a.button-2.close:active {
     background-color: #ba2732;
 }
 
-.inner-modal-content{
+.inner-modal-content {
     width: 620px;
     border-top: 7px solid red;
     color: #000000;
@@ -2381,11 +2371,11 @@ a.button-2.close:active {
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
 }
 
-.inner-modal-content:hover{
+.inner-modal-content:hover {
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.inner-modal-content-cart{
+.inner-modal-content-cart {
     width: 620px;
     color: #000000;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
@@ -2395,11 +2385,11 @@ a.button-2.close:active {
     margin-left: 160px;
 }
 
-.inner-modal-content-cart:hover{
+.inner-modal-content-cart:hover {
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.inner-modal-content-map{
+.inner-modal-content-map {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     margin: 80px;
     width: 940px;
