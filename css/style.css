@@ -670,8 +670,8 @@ a.offers:hover, a.personal-account:hover {
 
 .breadcrumbs {
     font-size: 0;
-    padding-top: 25px;
-    margin-left: -20px;
+    padding-top: 22px;
+    margin-left: -24px;
 }
 
 .home-page {
@@ -732,6 +732,7 @@ a.offers:hover, a.personal-account:hover {
     height: 60px;
     padding-left: 30px;
     padding-top: 30px;
+    margin: 20px 0 14px 0;
 }
 
 .conteiner-left {
@@ -1009,11 +1010,11 @@ a.sort-price:hover, a.sort-type:hover, a.sort-function:hover {
     font-size: 14px;
     line-height: 24px;
     border: 1px solid #e5e5e5;
-    border-radius: 5%;
-    width: 45px;
-    min-height: 25px;
+    border-radius: 3px;
+    width: 37px;
+    min-height: 24px;
     text-align: center;
-    padding: 10px 0;
+    padding: 7px 0;
     color: #000000;
 }
 
@@ -1035,7 +1036,7 @@ a.sort-price:hover, a.sort-type:hover, a.sort-function:hover {
 .paginator li {
     list-style: none;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 9px;
     vertical-align: top;
 }
 
@@ -1161,7 +1162,7 @@ section.promo {
 }
 
 .promo-bottom {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 
 .slider2 {
@@ -1173,7 +1174,7 @@ section.promo {
 .slider {
     position: relative;
     width: 940px;
-    min-height: 310px;
+    min-height: 317px;
     margin: 0 auto;
     font-family: "Cuprum Regular", 'Arial', sans-serif;
     overflow: hidden;
@@ -1242,14 +1243,16 @@ section.promo {
 
 .slide-text {
     width: 300px;
-    padding-left: 25px;
+    padding-left: 50px;
     margin-top: -40px;
 }
 
 .slides-title {
     font-family: "Cuprum Regular", 'Arial', sans-serif;
-    font-size: 31px;
+    font-size: 32px;
     line-height: 40px;
+    margin: 31px 0 24px 0;
+    color: #32425c;
 }
 
 .slide p {
@@ -1488,7 +1491,7 @@ a.button-popular {
     background-color: #ee3643;
     border: none;
     float: right;
-    width: 215px;
+    width: 192px;
     margin-top: 25px;
     margin-right: 25px;
     text-align: center;
@@ -1528,6 +1531,10 @@ a.button-popular {
 
 .item:hover .actions {
     display: block;
+}
+
+.filter-items h2 {
+    margin: 10px 0 15px 0;
 }
 
 /*  index items */
@@ -1602,7 +1609,7 @@ a.button-popular {
 }
 
 .nosale .item-title {
-    margin-bottom: 45px;
+    margin-bottom: 38px;
 }
 
 .item-title span {
@@ -1616,7 +1623,7 @@ a.button-popular {
     font-weight: bold;
     text-decoration: line-through;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     font-family: PT Sans Bold, 'Arial', sans-serif;
     min-height: 20px;
 }
@@ -1739,7 +1746,7 @@ a.buy:active::before {
 .popular-manufacturers {
     font-size: 0;
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 79px;
 }
 
 .popular-manufacturers div {
@@ -1788,8 +1795,8 @@ a.buy:active::before {
 }
 
 section.info-tehnomart {
-    margin-bottom: 85px;
-    margin-top: 50px;
+    margin-bottom: 98px;
+    margin-top: 47px;
 }
 
 .info-company {
@@ -1809,13 +1816,14 @@ section.info-tehnomart {
 }
 
 .info-company ul {
-    padding-bottom: 20px;
+    margin: 0 0 45px 0;
+    padding: 0 0 0 36px;
 }
 
 .info-company li {
     font-family: "Cuprum Regular", 'Arial', sans-serif;
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
     font-weight: bold;
     font-size: 18px;
     position: relative;
@@ -1890,6 +1898,7 @@ a.button-2:active {
 
 .info-contacts img {
     padding-bottom: 40px;
+    padding: 0;
 
 }
 
@@ -2189,10 +2198,14 @@ a.cite:hover:not(:active) {
     }
 }
 
+.js-open-map {
+    margin-bottom: 52px;
+    display: block;
+}
+
 .modal-content-show {
     display: block;
     animation: bounce 0.6s;
-
 }
 
 .modal-error {
@@ -2391,7 +2404,8 @@ a.button-2.close:active {
 
 .inner-modal-content-map {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    margin: 80px;
+    margin-top: 50px;
+    margin-bottom: 80px;
     width: 940px;
     height: 450px;
 }

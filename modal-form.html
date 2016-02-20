@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Напишите нам!</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
@@ -36,7 +36,6 @@
                 <a class="registration" href="#">Регистрация</a>
             </div>
         </div>
-        </div>
         <div class="header-navigation clearfix">
             <ul>
                 <li><a href="index.html">Главная</a></li>
@@ -58,25 +57,25 @@
                 <li>напишите нам!</li>
             </ul>
         </div>
-                <form class="message inner-modal-content" method="post" onsubmit="">
-                    <div class="modal-top">
-                        <div class="message-item">
-                            <label for="name">Ваше имя:</label>
-                            <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-                        </div>
-                        <div class="message-item">
-                            <label for="email">Ваш e-mail: </label>
-                            <input id="email" type="text" name="email" placeholder="Для отправки ответа">
-                        </div>
-                        <div class="message-text">
-                            <label>Текст письма:</label>
-                            <textarea name="text" placeholder="В свободной форме"></textarea>
-                        </div>
-                    </div>
-                    <div class="modal-bottom">
-                        <input type="submit" value="отправить">
-                    </div>
-                </form>
+        <form class="message inner-modal-content" method="post" onsubmit="">
+            <div class="modal-top">
+                <div class="message-item">
+                    <label for="name">Ваше имя:</label>
+                    <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+                </div>
+                <div class="message-item">
+                    <label for="email">Ваш e-mail: </label>
+                    <input id="email" type="text" name="email" placeholder="Для отправки ответа">
+                </div>
+                <div class="message-text">
+                    <label>Текст письма:</label>
+                    <textarea name="text" placeholder="В свободной форме"></textarea>
+                </div>
+            </div>
+            <div class="modal-bottom">
+                <input type="submit" value="отправить">
+            </div>
+        </form>
     </div>
 </main>
 <footer class="main-footer">
