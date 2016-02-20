@@ -213,6 +213,10 @@
     color: #ffffff;
 }
 
+.header-top-search input[type="search"]:hover {
+    background-color: #212a3a;
+}
+
 .header-top-search input[type="search"]:focus + span {
     color: #ee3643;
 }
