@@ -189,7 +189,7 @@
 .icon-search {
     position: absolute;
     color: #6a7180;
-    right: 208px;
+    right: 204px;
     bottom: 13px;
 }
 
@@ -310,7 +310,7 @@ input[type="search"] {
     width: 245px;
     font-size: 17px;
     height: 40px;
-    padding-left: 40px;
+    padding-left: 48px;
     font-family: "Cuprum Regular", 'Arial', sans-serif;
 }
 
@@ -343,9 +343,21 @@ a.bookmarks:hover:not(.indicator), a.cart:hover:not(.indicator) {
     background-color: #212a3a;
 }
 
-a.bookmarks, a.cart {
-    padding: 12px 25px 12px 44px;
+a.bookmarks  {
+    padding-bottom: 12px;
+    padding-left: 29px;
+    padding-right: 26px;
+    padding-top: 12px;
+
 }
+
+a.cart{
+    padding-bottom: 12px;
+    padding-left: 49px;
+    padding-right: 28px;
+    padding-top: 12px;
+}
+
 
 .header-top-nav a:active span {
     opacity: 0.5;
@@ -355,7 +367,7 @@ a.bookmarks::before {
     content: "\1f516";
     position: absolute;
     bottom: 13px;
-    left: 20px;
+    left: 1px;
     display: block;
     font-family: symbols-technomart;
     color: #ffffff;
@@ -370,10 +382,6 @@ a.bookmarks:active::before, a.cart:active::before {
     opacity: 0.3;
 }
 
-a.cart {
-    text-align: right;
-    padding-right: 20px;
-}
 
 a.cart::before {
     content: "\62";
@@ -442,14 +450,14 @@ a.action:hover {
     position: relative;
     height: 30px;
     padding-top: 10px;
-    padding-left: 75px;
+    padding-left: 65px;
 }
 
 .header-center-contacts .phone::before {
     content: "\1f4de";
     position: absolute;
-    bottom: 13px;
-    left: 15px;
+    bottom: 11px;
+    left: 10px;
     display: block;
     font-family: "symbols-technomart";
     color: #000000;
@@ -534,8 +542,8 @@ a.user {
     font-size: 21px;
     line-height: 18px;
     vertical-align: top;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 2px;
+    padding-right: 22px;
     padding-bottom: 13px;
     padding-top: 13px;
     background-color: #ffffff;
@@ -603,7 +611,7 @@ a.user-out:active::after {
     line-height: 26px;
     text-decoration: underline;
     margin-left: 20px;
-    padding-right: 20px;
+    padding-right: 7px;
 }
 
 a.offers:hover, a.personal-account:hover {
