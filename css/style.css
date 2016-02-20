@@ -1343,10 +1343,8 @@ section.promo {
     bottom: 30px;
     left: 50%;
     z-index: 10;
-
     width: 200px;
     margin-left: -100px;
-
     text-align: center;
 }
 
@@ -1366,6 +1364,9 @@ section.promo {
     width: 245px;
     padding-left: 25px;
     padding-top: 25px;
+    position: absolute;
+    top:0;
+    left: 0;
 }
 
 .promo-info span {
@@ -1408,13 +1409,6 @@ a.button:active {
     background-color: #ba2732;
 }
 
-.promo-slide:nth-child(1) {
-    background: #ffffff url("../img/layer99.jpg") 100% 0 no-repeat;
-}
-
-.promo-slide:nth-child(2) {
-    background: #ffffff url("../img/layer99copy.jpg") 100% 0 no-repeat;
-}
 
 #btn-1:checked ~ .promo-slides .promo-slide:nth-child(1) {
     left: 0;
