@@ -770,6 +770,13 @@ a.offers:hover, a.personal-account:hover {
     margin-bottom: 13px;
 }
 
+h2{
+    font-family: "Cuprum Regular", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
 .range-filter {
     width: 220px;
     margin-bottom: 27px;
@@ -1820,6 +1827,7 @@ a.buy:active::before {
 section.info-tehnomart {
     margin-bottom: 98px;
     margin-top: 47px;
+    position: relative;
 }
 
 .info-company {
@@ -2182,10 +2190,8 @@ a.cite:hover:not(:active) {
     width: 940px;
     height: 450px;
     background: #e9e5dc url("../img/big-map.jpg");
-    top: 50%;
-    left: 50%;
-    margin-top: 1675px;
-    margin-left: -470px;
+    left: 0;
+    top: 35px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     position: absolute;
     display: none;
