@@ -10,8 +10,8 @@ var text = popup.querySelector("[name=text]");
 
 
 var storage = {
-    login:'',
-    email:''
+    login:"",
+    email:""
 };
 storage.login = localStorage.getItem("login");
 storage.email = localStorage.getItem("email");

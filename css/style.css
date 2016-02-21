@@ -189,7 +189,7 @@
 .icon-search {
     position: absolute;
     color: #6a7180;
-    right: 208px;
+    right: 207px;
     bottom: 13px;
 }
 
@@ -264,7 +264,7 @@ a {
 .main-header {
     min-height: 320px;
     background-color: #f2f6f8;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
 }
 
 .header-top {
@@ -277,7 +277,7 @@ a {
     width: 220px;
     background-color: #ee3643;
     color: #ffffff;
-    font-family: "Cuprum Bold", 'Arial', sans-serif;
+    font-family: "Cuprum Bold", "Arial", sans-serif;
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
@@ -288,7 +288,7 @@ a {
 }
 
 .button-top-logo::after {
-    content: '';
+    content: "";
     border-bottom: 5px solid #b52933;
     position: absolute;
     top: 100%;
@@ -302,7 +302,7 @@ a {
 
 .header-top-search {
     float: left;
-    width: 240px;
+    width: 243px;
     height: 42px;
     position: relative;
 }
@@ -314,8 +314,8 @@ input[type="search"] {
     width: 245px;
     font-size: 17px;
     height: 40px;
-    padding-left: 40px;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    padding-left: 46px;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
 }
 
 .header-top-search input[type="search"]:focus {
@@ -328,9 +328,9 @@ input[type="search"] {
 
 .header-top-nav {
     float: right;
-    width: 434px;
+    width: 454px;
     font-size: 0;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     line-height: 18px;
 }
 
@@ -347,8 +347,12 @@ a.bookmarks:hover:not(.indicator), a.cart:hover:not(.indicator) {
     background-color: #212a3a;
 }
 
-a.bookmarks, a.cart {
-    padding: 12px 25px 12px 44px;
+a.cart {
+    padding: 12px 30px 12px 44px;
+}
+
+a.bookmarks{
+    padding: 12px 30px 12px 44px;
 }
 
 .header-top-nav a:active span {
@@ -400,7 +404,7 @@ a.cart::before {
 
 a.action {
     background-color: #63a63e;
-    padding: 12px 20px;
+    padding: 12px 21px;
 }
 
 a.action:hover {
@@ -413,7 +417,7 @@ a.action:hover {
 
 .header-center {
     min-height: 90px;
-    padding-top: 47px;
+    padding-top: 48px;
     padding-bottom: 20px;
 }
 
@@ -421,7 +425,7 @@ a.action:hover {
     float: left;
     width: 200px;
     color: #ee3643;
-    font-family: "Cuprum Italic", 'Arial', sans-serif;
+    font-family: "Cuprum Italic", "Arial", sans-serif;
     text-align: left;
     margin-left: 50px;
     margin-right: 70px;
@@ -446,7 +450,7 @@ a.action:hover {
     position: relative;
     height: 30px;
     padding-top: 10px;
-    padding-left: 65px;
+    padding-left: 68px;
 }
 
 .header-center-contacts .phone::before {
@@ -463,7 +467,7 @@ a.action:hover {
 .header-center-contacts .address {
     color: #32425c;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 30px;
     text-align: center;
 }
 
@@ -582,7 +586,7 @@ a.user:hover::before {
 a.user-out::after {
     content: "\241b";
     position: absolute;
-    bottom: 9px;
+    bottom: 11px;
     right: 10px;
     display: block;
     font-family: "symbols-technomart";
@@ -604,9 +608,9 @@ a.user-out:active::after {
 .offers, .personal-account {
     color: #32425c;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 31px;
     text-decoration: underline;
-    margin-left: 20px;
+    margin-left: 19px;
     padding-right: 7px;
 }
 
@@ -619,23 +623,23 @@ a.offers:hover, a.personal-account:hover {
 }
 
 .personal-account::before {
-    content: '';
+    content: "";
     border: 2px solid #32425c;
     border-radius: 50%;
     position: absolute;
     top: 8px;
-    left: -23px;
+    left: -18px;
 }
 
 .header-navigation {
     border-bottom: 5px solid #293449;
     font-size: 0;
+    min-height: 55px;
 }
 
 .header-navigation ul {
     margin: 0;
     background-color: #32425c;
-    height: 60px;
     text-align: center;
     font-size: 0;
 }
@@ -650,10 +654,7 @@ a.offers:hover, a.personal-account:hover {
     line-height: 17px;
     color: #ffffff;
     display: block;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 20px 32px 18px 29px;
 }
 
 .header-navigation a:hover {
@@ -674,8 +675,8 @@ a.offers:hover, a.personal-account:hover {
 
 .breadcrumbs {
     font-size: 0;
-    padding-top: 22px;
-    margin-left: -24px;
+    margin-top: 22px;
+    margin-left: -28px;
 }
 
 .home-page {
@@ -712,7 +713,7 @@ a.offers:hover, a.personal-account:hover {
     font-size: 13px;
     color: #000000;
     line-height: 18px;
-    font-family: "PT Sans Regular", 'Arial', sans-serif;
+    font-family: "PT Sans Regular", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
@@ -722,50 +723,55 @@ a.offers:hover, a.personal-account:hover {
     color: #000000;
     line-height: 18px;
     font-weight: normal;
-    font-family: "PT Sans Regular", 'Arial', sans-serif;
+    font-family: "PT Sans Regular", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
-.header h1 {
+.header{
+    padding: 30px 0 30px 28px;
+    margin-bottom: 18px;
     background-color: #f2f6f8;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+}
+
+.header h1 {
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     line-height: 30px;
     font-size: 30px;
     text-transform: uppercase;
     color: #32425c;
-    height: 60px;
-    padding-left: 30px;
-    padding-top: 30px;
-    margin: 20px 0 14px 0;
+    margin: 0;
+    padding: 0;
 }
 
 .conteiner-left {
     width: 220px;
     float: left;
-    margin-top: 15px;
 }
 
-.filters span {
-    font-family: PT Sans Regular, 'Arial', sans-serif;
+.filters {
+    font-family: PT Sans Regular, "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     background-color: #f7f3ec;
     text-transform: uppercase;
-    padding: 15px 150px 15px 20px;
+    padding: 11px 0 11px 17px;
+    min-width: 198px;
+    margin-bottom: 9px;
 }
 
-h2 {
-    font-family: PT Sans Bold, 'Arial', sans-serif;
+.filter-header h2 {
+    font-family: PT Sans Bold, "Arial", sans-serif;
     font-size: 17px;
     line-height: 30px;
     text-transform: uppercase;
-    padding-top: 10px;
-
+    margin: 0;
+    padding: 0;
+    margin-bottom: 13px;
 }
 
 .range-filter {
     width: 220px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 
 .range-controls {
@@ -827,7 +833,7 @@ h2 {
 }
 
 .price-controls::after {
-    content: '—';
+    content: "—";
     position: absolute;
     left: 100px;
     top: 10px;
@@ -838,7 +844,7 @@ input.min-price {
 }
 
 .filter-checkbox label, .filter-radio label {
-    font-family: PT Sans Regular, 'Arial', sans-serif;
+    font-family: PT Sans Regular, "Arial", sans-serif;
     font-size: 15px;
     line-height: 20px;
     text-transform: uppercase;
@@ -920,19 +926,24 @@ input:disabled + label, input:disabled + label:hover {
     margin-bottom: 20px;
 }
 
-.filter-radio:last-child {
-    margin-bottom: 80px;
+.filter-power{
+   margin-bottom: 87px;
 }
 
 a.button {
     border: 1px solid #e5e5e5;
     padding: 7px 30px;
-    font-family: PT Sans Regular, 'Arial', sans-serif;
+    font-family: PT Sans Regular, "Arial", sans-serif;
     font-size: 15px;
     line-height: 18px;
     color: #000000;
     text-transform: uppercase;
     border-radius: 3px;
+}
+
+.button.submit{
+    font-size: 13px;
+    padding: 9px 37px;
 }
 
 a.button.submit:hover {
@@ -951,19 +962,19 @@ a.button.submit:active {
 }
 
 .sort-navigation {
-    font-family: PT Sans Regular, 'Arial', sans-serif;
+    font-family: PT Sans Regular, "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     background-color: #f7f3ec;
     text-transform: uppercase;
-    padding-top: 2px;
-    height: 45px;
     text-align: left;
     vertical-align: top;
+    padding: 10px 0 4px 17px;
 }
 
 .sort-navigation ul {
-    padding-left: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .sort-navigation li {
@@ -1003,7 +1014,7 @@ a.sort-price:hover, a.sort-type:hover, a.sort-function:hover {
 .paginator {
     font-size: 0;
     vertical-align: top;
-    margin-top: 50px;
+    margin-top: 47px;
     margin-bottom: 60px;
     padding-left: 0;
 }
@@ -1024,7 +1035,7 @@ a.sort-price:hover, a.sort-type:hover, a.sort-function:hover {
 
 .paginator li a:active:not(.active) {
     border: 1px solid #ee3643;
-    border-radius: 5%;
+    border-radius: 3px;
 }
 
 .paginator a.active {
@@ -1053,7 +1064,7 @@ section.info {
 }
 
 h3 {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     line-height: 30px;
     font-size: 30px;
     text-transform: uppercase;
@@ -1066,7 +1077,7 @@ h3 {
 .info p {
     text-align: left;
     line-height: 24px;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     padding-bottom: 70px;
     font-size: 14px;
     margin: 0;
@@ -1086,7 +1097,7 @@ section.promo {
 }
 
 .promo-name {
-    font-family: "Cuprum Bold", 'Arial', sans-serif;
+    font-family: "Cuprum Bold", "Arial", sans-serif;
     font-size: 24px;
     line-height: 30px;
     color: #ffffff;
@@ -1097,7 +1108,7 @@ section.promo {
 }
 
 .promo-btn {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
@@ -1106,7 +1117,7 @@ section.promo {
     text-align: center;
     background-color: rgba(74, 74, 74, 0.2);
     width: 125px;
-    border-radius: 7%;
+    border-radius: 7px;
     margin-left: 20px;
     text-transform: uppercase;
 }
@@ -1126,7 +1137,7 @@ section.promo {
 }
 
 .promo-item-materials::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 35px;
     right: 45px;
@@ -1141,7 +1152,7 @@ section.promo {
 }
 
 .promo-item-tools::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 40px;
     right: 25px;
@@ -1156,7 +1167,7 @@ section.promo {
 }
 
 .promo-item-tech::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 40px;
     right: 25px;
@@ -1180,7 +1191,7 @@ section.promo {
     width: 940px;
     min-height: 317px;
     margin: 0 auto;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     overflow: hidden;
 }
 
@@ -1204,7 +1215,7 @@ section.promo {
     cursor: pointer;
     color: #ffffff;
     background-color: #32425c;
-    font-family: "Cuprum Bold", 'Arial', sans-serif;
+    font-family: "Cuprum Bold", "Arial", sans-serif;
     font-size: 21px;
     line-height: 30px;
     display: block;
@@ -1226,7 +1237,7 @@ section.promo {
 }
 
 .slider-nav::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -45px;
     right: -1px;
@@ -1246,15 +1257,18 @@ section.promo {
 }
 
 .slide-text {
-    width: 300px;
+    width: 275px;
     padding-left: 50px;
     margin-top: -40px;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: "PT Sans Regular", "Arial", sans-serif;
 }
 
 .slides-title {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
-    font-size: 32px;
-    line-height: 40px;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 24px;
     margin: 31px 0 24px 0;
     color: #32425c;
 }
@@ -1376,7 +1390,7 @@ section.promo {
 }
 
 .promo-info span {
-    font-family: "Cuprum Bold", 'Arial', sans-serif;
+    font-family: "Cuprum Bold", "Arial", sans-serif;
     font-size: 36px;
     line-height: 30px;
     color: #ffffff;
@@ -1384,7 +1398,7 @@ section.promo {
 }
 
 .promo-info div {
-    font-family: "PT Sans Regular", 'Arial', sans-serif;
+    font-family: "PT Sans Regular", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
@@ -1395,10 +1409,10 @@ a.button-catalog {
     color: #ffffff;
     background-color: #ee3643;
     border: none;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    border-radius: 3%;
+    border-radius: 3px;
     text-align: center;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -1446,7 +1460,7 @@ a.button:active {
 }
 
 .promo-item-sale::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 30px;
     right: 25px;
@@ -1460,7 +1474,7 @@ a.button:active {
 }
 
 .promo-item-delivery::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 40px;
     right: 25px;
@@ -1475,7 +1489,7 @@ a.button:active {
 }
 
 h1 {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -1499,7 +1513,7 @@ a.button-popular {
     margin-top: 25px;
     margin-right: 25px;
     text-align: center;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     border-radius: 3px;
@@ -1538,7 +1552,8 @@ a.button-popular {
 }
 
 .filter-items h2 {
-    margin: 10px 0 15px 0;
+    margin: 17px 0 15px 0;
+    padding: 0;
 }
 
 /*  index items */
@@ -1578,7 +1593,7 @@ a.button-popular {
     z-index: 10;
     width: 60px;
     height: 60px;
-    content: '';
+    content: "";
     background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
@@ -1602,7 +1617,7 @@ a.button-popular {
     line-height: 20px;
     color: #000000;
     font-weight: bold;
-    font-family: PT Sans Bold, 'Arial', sans-serif;
+    font-family: PT Sans Bold, "Arial", sans-serif;
     text-align: center;
     padding: 0 25px;
     margin-bottom: 10px;
@@ -1628,7 +1643,7 @@ a.button-popular {
     text-decoration: line-through;
     text-align: center;
     margin-bottom: 7px;
-    font-family: PT Sans Bold, 'Arial', sans-serif;
+    font-family: PT Sans Bold, "Arial", sans-serif;
     min-height: 20px;
 }
 
@@ -1643,7 +1658,7 @@ a.button-popular {
     padding: 10px 30px;
     border-radius: 3px;
     background: #ee3643;
-    font-family: PT Sans Bold, 'Arial', sans-serif;
+    font-family: PT Sans Bold, "Arial", sans-serif;
 }
 
 .item-price-new:after {
@@ -1652,7 +1667,7 @@ a.button-popular {
     right: -20px;
     width: 0;
     height: 0;
-    content: '';
+    content: "";
     border: 19px solid #fff;
     border-left-color: #ee3643;
 }
@@ -1674,7 +1689,7 @@ a.button-popular {
 }
 
 .actions .buy, .actions .bookmark {
-    font-family: 'Cuprum Regular', 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 14px;
     display: block;
     width: 135px;
@@ -1753,7 +1768,7 @@ a.buy:active::before {
     margin-bottom: 79px;
 }
 
-.popular-manufacturers div {
+.popular-manufacturers a {
     display: inline-block;
     width: 219px;
     height: 145px;
@@ -1769,16 +1784,16 @@ a.buy:active::before {
     vertical-align: middle;
 }
 
-.popular-manufacturers div:nth-child(4n) {
+.popular-manufacturers a:nth-child(4n) {
     margin-right: 0;
 }
 
-.popular-manufacturers div:hover {
+.popular-manufacturers a:hover {
     border: 1px solid #ffffff;
     box-shadow: 0 5px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.popular-manufacturers div:active {
+.popular-manufacturers a:active {
     border: 1px solid #ffffff;
     box-shadow: 0 5px 25px 0 rgba(41, 52, 73, 0.30);
     opacity: 0.3;
@@ -1790,12 +1805,15 @@ a.buy:active::before {
 }
 
 .service h2 {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
-    font-size: 28px;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 24px;
 }
 
 .service p {
-    line-height: 23px;
+    font-family: "PT Sans Regular", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
 }
 
 section.info-tehnomart {
@@ -1809,14 +1827,22 @@ section.info-tehnomart {
 }
 
 .info-company h2 {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 30px;
 }
 
 .info-company p {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "PT Sans Regular", "Arial", sans-serif;
     padding-bottom: 10px;
-    line-height: 23px;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.info-contacts p {
+    font-family: "PT Sans Regular", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    width: 180px;
 }
 
 .info-company ul {
@@ -1825,7 +1851,7 @@ section.info-tehnomart {
 }
 
 .info-company li {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     list-style: none;
     margin-bottom: 17px;
     font-weight: bold;
@@ -1834,7 +1860,7 @@ section.info-tehnomart {
 }
 
 .info-company li::before {
-    content: '';
+    content: "";
     background: url("../img/red-dash.png") 0 0 no-repeat;
     position: absolute;
     top: 10px;
@@ -1847,10 +1873,10 @@ section.info-tehnomart {
 a.button-1 {
     color: #ffffff;
     background-color: #ee3643;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    border-radius: 5%;
+    border-radius: 5px;
     padding: 10px 40px;
     text-transform: uppercase;
     text-align: center;
@@ -1867,10 +1893,10 @@ a.button-1:active {
 a.button-2 {
     color: #ffffff;
     background-color: #ee3643;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    border-radius: 5%;
+    border-radius: 5px;
     padding: 10px 60px;
     text-transform: uppercase;
     text-align: center;
@@ -1890,12 +1916,12 @@ a.button-2:active {
 }
 
 .info-contacts h2 {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 30px;
 }
 
 .info-contacts p {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     padding-bottom: 10px;
     line-height: 23px;
 }
@@ -1911,7 +1937,7 @@ a.button-2:active {
 .main-footer {
     min-height: 300px;
     background-color: #32425c;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
 }
 
 .footer-top {
@@ -1925,7 +1951,7 @@ a.button-2:active {
     background-color: #ee3643;
     color: #ffffff;
     height: 45px;
-    font-family: "Cuprum Bold", 'Arial', sans-serif;
+    font-family: "Cuprum Bold", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -1943,13 +1969,14 @@ a.button-2:active {
     margin: 0;
     background-color: #32425c;
     height: 60px;
-    text-align: center;
     font-size: 0;
+    text-align: left;
 }
 
 .footer-top-navigation li {
     display: inline-block;
     vertical-align: top;
+    margin-right: 43px;
 }
 
 .footer-top-navigation a {
@@ -1957,9 +1984,6 @@ a.button-2:active {
     line-height: 24px;
     color: #ffffff;
     display: block;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    padding-right: 50px;
 }
 
 .footer-top-navigation a:hover, .footer-center-navigation a:hover {
@@ -1973,9 +1997,15 @@ a.button-2:active {
 
 .footer-top-navigation ul:first-child {
     padding-left: 137px;
+    margin-top: 36px;
 }
 
 .footer-top-navigation ul:last-child {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.footer-top-navigation li:last-child {
     padding-right: 0;
     margin-right: 0;
 }
@@ -1992,7 +2022,7 @@ a.button-2:active {
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
 }
 
 .footer-center-navigation {
@@ -2018,13 +2048,12 @@ a.button-2:active {
     line-height: 24px;
     color: #ffd180;
     display: block;
-    padding-top: 0;
-    padding-bottom: 10px;
-    padding-right: 50px;
 }
 
 .footer-center-navigation ul:first-child {
     padding-left: 12px;
+    margin: 0;
+    text-align: left;
 }
 
 .footer-center-navigation ul:last-child {
@@ -2255,7 +2284,7 @@ h2.modal-content-title {
     text-transform: none;
     margin: 0;
     padding: 0;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
 }
 
 .modal-cart {
@@ -2320,14 +2349,14 @@ a.button-2.close:active {
     outline: none;
     font-size: 13px;
     line-height: 18px;
-    font-family: PT Sans Regular, 'Arial', sans-serif;
+    font-family: PT Sans Regular, "Arial", sans-serif;
     border: 2px solid gainsboro;
     border-radius: 3px;
     margin-bottom: 20px;
 }
 
 .message label {
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 18px;
     line-height: 18px;
     display: block;
@@ -2342,7 +2371,7 @@ a.button-2.close:active {
     padding: 10px;
     font-size: 13px;
     line-height: 18px;
-    font-family: PT Sans Regular, 'Arial', sans-serif;
+    font-family: PT Sans Regular, "Arial", sans-serif;
     resize: none;
     outline: none;
 }
@@ -2358,7 +2387,7 @@ a.button-2.close:active {
 .modal-bottom input[type="submit"] {
     background-color: #ee3643;
     color: #ffffff;
-    font-family: "Cuprum Regular", 'Arial', sans-serif;
+    font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     border-radius: 3px;
