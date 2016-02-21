@@ -745,7 +745,7 @@ a.offers:hover, a.personal-account:hover {
 }
 
 .filters {
-    font-family: PT Sans Regular, "Arial", sans-serif;
+    font-family: "PT Sans Regular", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
     background-color: #f7f3ec;
@@ -756,7 +756,7 @@ a.offers:hover, a.personal-account:hover {
 }
 
 .filter-header h2 {
-    font-family: PT Sans Bold, "Arial", sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     font-size: 17px;
     line-height: 30px;
     text-transform: uppercase;
@@ -1185,6 +1185,7 @@ section.promo {
 
 .slider2 {
     background-color: #f2f6f8;
+    padding-bottom: 30px;
 }
 
 /* slider2 */
@@ -1501,7 +1502,7 @@ h1 {
     float: left;
     margin-left: 25px;
     font-weight: normal;
-    padding-top: 10px;
+    padding-top: 6px;
 }
 
 a.button-popular {
@@ -1533,7 +1534,7 @@ a.button-popular {
 .item {
     display: inline-block;
     width: 218px;
-    height: 318px;
+    min-height: 318px;
     background-color: #ffffff;
     vertical-align: top;
     border: 1px solid #e5e5e5;
@@ -1554,6 +1555,10 @@ a.button-popular {
 .filter-items h2 {
     margin: 17px 0 15px 0;
     padding: 0;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 
 /*  index items */
@@ -1571,12 +1576,12 @@ a.button-popular {
 .popular-item {
     display: inline-block;
     width: 218px;
-    height: 318px;
+    min-height: 318px;
     background-color: #ffffff;
     vertical-align: top;
     border: 1px solid #e5e5e5;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 16px;
     position: relative;
     text-align: center;
 }
@@ -1819,8 +1824,8 @@ a.buy:active::before {
 }
 
 section.info-tehnomart {
-    margin-bottom: 98px;
-    margin-top: 47px;
+    margin-bottom: 85px;
+    margin-top: 58px;
     position: relative;
 }
 
@@ -1832,6 +1837,7 @@ section.info-tehnomart {
 .info-company h2 {
     font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 30px;
+    margin-bottom: 28px;
 }
 
 .info-company p {
@@ -1849,7 +1855,7 @@ section.info-tehnomart {
 }
 
 .info-company ul {
-    margin: 0 0 45px 0;
+    margin: 0 0 38px 0;
     padding: 0 0 0 36px;
 }
 
@@ -1883,6 +1889,8 @@ a.button-1 {
     padding: 10px 40px;
     text-transform: uppercase;
     text-align: center;
+    display: block;
+    width: 140px;
 }
 
 a.button-1:hover {
@@ -1903,6 +1911,7 @@ a.button-2 {
     padding: 10px 60px;
     text-transform: uppercase;
     text-align: center;
+    display: block;
 }
 
 a.button-2:hover {
@@ -1921,6 +1930,7 @@ a.button-2:active {
 .info-contacts h2 {
     font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 30px;
+    margin-bottom: 28px;
 }
 
 .info-contacts p {
@@ -2235,7 +2245,7 @@ a.cite:hover:not(:active) {
 }
 
 .js-open-map {
-    margin-bottom: 52px;
+    margin-bottom: 47px;
     display: block;
 }
 
