@@ -677,6 +677,7 @@ a.offers:hover, a.personal-account:hover {
     font-size: 0;
     margin-top: 22px;
     margin-left: -28px;
+    margin-bottom: 21px;
 }
 
 .home-page {
@@ -1976,7 +1977,7 @@ a.button-2:active {
 .footer-top-navigation li {
     display: inline-block;
     vertical-align: top;
-    margin-right: 43px;
+    margin-right: 59px;
 }
 
 .footer-top-navigation a {
@@ -1996,7 +1997,7 @@ a.button-2:active {
 }
 
 .footer-top-navigation ul:first-child {
-    padding-left: 137px;
+    padding-left: 151px;
     margin-top: 36px;
 }
 
@@ -2012,8 +2013,7 @@ a.button-2:active {
 
 .footer-center {
     background-color: #32425c;
-    min-height: 100px;
-    padding-top: 30px;
+    min-height: 95px;
 }
 
 .footer-center-contacts {
@@ -2041,6 +2041,11 @@ a.button-2:active {
 .footer-center-navigation li {
     display: inline-block;
     vertical-align: top;
+    margin-right: 59px;
+}
+
+.footer-center-navigation li:last-child{
+    margin-right: 0;
 }
 
 .footer-center-navigation a {
@@ -2051,7 +2056,7 @@ a.button-2:active {
 }
 
 .footer-center-navigation ul:first-child {
-    padding-left: 12px;
+    padding-left: 33px;
     margin: 0;
     text-align: left;
 }
@@ -2064,8 +2069,7 @@ a.button-2:active {
 .footer-bottom {
     background-color: #293449;
     min-height: 65px;
-    padding-top: 40px;
-
+    padding-top: 37px;
 }
 
 .footer-bottom-info {
@@ -2080,14 +2084,13 @@ a.button-2:active {
     float: left;
     width: 150px;
     text-align: center;
-    margin-left: 110px;
+    margin-left: 142px;
 }
 
 .social-btn {
     display: inline-block;
     width: 40px;
     height: 40px;
-    margin: 0 2px;
     vertical-align: top;
     border: 1px solid transparent;
     border-radius: 50%;
@@ -2136,12 +2139,12 @@ a.button-2:active {
     color: #ffffff;
     float: right;
     width: 160px;
-    margin-right: 40px;
+    margin-right: 28px;
 }
 
 .footer-bottom-develop {
     float: right;
-    width: 140px;
+    width: 111px;
     color: #ffffff;
 }
 
