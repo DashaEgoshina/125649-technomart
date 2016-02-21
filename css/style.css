@@ -311,7 +311,7 @@ input[type="search"] {
     border: none;
     background: none;
     outline: none;
-    width: 245px;
+    width: 221px;
     font-size: 17px;
     height: 40px;
     padding-left: 46px;
@@ -376,11 +376,6 @@ a.bookmarks:hover::before, a.cart:hover::before {
 
 a.bookmarks:active::before, a.cart:active::before {
     opacity: 0.3;
-}
-
-a.cart {
-    text-align: right;
-    padding-right: 20px;
 }
 
 a.cart::before {
@@ -490,8 +485,8 @@ a.login {
     font-size: 21px;
     line-height: 18px;
     color: #000000;
-    margin-right: 10px;
-    margin-left: 5px;
+    margin-right: 6px;
+    margin-left: 15px;
     display: inline-block;
     vertical-align: top;
 }
@@ -1099,7 +1094,7 @@ section.promo {
 
 .promo-item {
     width: 300px;
-    height: 125px;
+    height: 123px;
     margin-bottom: 20px;
     position: relative;
 }
@@ -1112,7 +1107,7 @@ section.promo {
     padding-top: 20px;
     padding-left: 20px;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 
 .promo-btn {
@@ -1124,9 +1119,9 @@ section.promo {
     padding: 10px 10px;
     text-align: center;
     background-color: rgba(74, 74, 74, 0.2);
-    width: 125px;
-    border-radius: 7px;
-    margin-left: 20px;
+    width: 114px;
+    border-radius: 3px;
+    margin-left: 25px;
     text-transform: uppercase;
 }
 
@@ -1147,7 +1142,7 @@ section.promo {
 .promo-item-materials::after {
     content: "";
     position: absolute;
-    top: 35px;
+    top: 30px;
     right: 45px;
     background: url("../img/sprite.png") 0 -135px no-repeat;
     width: 44px;
@@ -1162,8 +1157,8 @@ section.promo {
 .promo-item-tools::after {
     content: "";
     position: absolute;
-    top: 40px;
-    right: 25px;
+    top: 32px;
+    right: 27px;
     background: url("../img/sprite.png") 0 -262px no-repeat;
     width: 75px;
     height: 61px;
@@ -1177,15 +1172,15 @@ section.promo {
 .promo-item-tech::after {
     content: "";
     position: absolute;
-    top: 40px;
-    right: 25px;
+    top: 30px;
+    right: 32px;
     background: url("../img/sprite.png") 0 -200px no-repeat;
     width: 78px;
     height: 62px;
 }
 
 .promo-bottom {
-    margin-bottom: 26px;
+    margin-bottom: 35px;
 }
 
 .slider2 {
@@ -1208,14 +1203,15 @@ section.promo {
 }
 
 .slider-nav {
-    position: absolute;
-    bottom: 100px;
-    z-index: 10;
     font-size: 0;
-    left: -40px;
     text-align: center;
     width: 240px;
     height: 185px;
+    float: left;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
 }
 
 .slider-nav label {
@@ -1247,7 +1243,7 @@ section.promo {
 .slider-nav::after {
     content: "";
     position: absolute;
-    top: -45px;
+    top: 0;
     right: -1px;
     background: url("../img/separator.png") 0 0 no-repeat;
     width: 10px;
@@ -1256,18 +1252,14 @@ section.promo {
 }
 
 .slide {
-    position: absolute;
-    top: 30px;
-    right: 0;
+    float: right;
     width: 670px;
-    height: 310px;
-    overflow: hidden;
+    min-height: 310px;
 }
 
 .slide-text {
     width: 275px;
     padding-left: 50px;
-    margin-top: -40px;
     font-size: 13px;
     line-height: 24px;
     font-family: "PT Sans Regular", "Arial", sans-serif;
@@ -1277,7 +1269,7 @@ section.promo {
     font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 36px;
     line-height: 24px;
-    margin: 31px 0 24px 0;
+    margin: 67px 0 31px 0;
     color: #32425c;
 }
 
@@ -1286,15 +1278,15 @@ section.promo {
 }
 
 .slide:nth-child(1) {
-    background: url("../img/layer131.png") 100% 30px no-repeat;
+    background: url("../img/layer131.png") 100% 86px no-repeat;
 }
 
 .slide:nth-child(2) {
-    background: url("../img/layer130.png") 100% 30px no-repeat;
+    background: url("../img/layer130.png") 100% 86px no-repeat;
 }
 
 .slide:nth-child(3) {
-    background: url("../img/layer119.png") 100% 30px no-repeat;
+    background: url("../img/layer119.png") 100% 86px no-repeat;
 }
 
 .slide {
@@ -1470,8 +1462,8 @@ a.button:active {
 .promo-item-sale::after {
     content: "";
     position: absolute;
-    top: 30px;
-    right: 25px;
+    top: 26px;
+    right: 43px;
     background: url("../img/sprite.png") 0 0 no-repeat;
     width: 59px;
     height: 72px;
@@ -1484,8 +1476,8 @@ a.button:active {
 .promo-item-delivery::after {
     content: "";
     position: absolute;
-    top: 40px;
-    right: 25px;
+    top: 33px;
+    right: 31px;
     background: url("../img/sprite.png") 0 -72px no-repeat;
     width: 78px;
     height: 63px;
@@ -1493,7 +1485,7 @@ a.button:active {
 
 .popular-title {
     background-color: #f7f3ec;
-    height: 90px;
+    min-height: 90px;
 }
 
 h1 {
@@ -1505,7 +1497,7 @@ h1 {
 }
 
 .popular-title h1 {
-    width: 375px;
+    max-width: 545px;
     float: left;
     margin-left: 25px;
     font-weight: normal;
@@ -1773,17 +1765,17 @@ a.buy:active::before {
 .popular-manufacturers {
     font-size: 0;
     margin: 0;
-    margin-bottom: 79px;
+    margin-bottom: 88px;
 }
 
 .popular-manufacturers a {
     display: inline-block;
-    width: 219px;
-    height: 145px;
+    width: 217px;
+    height: 141px;
     vertical-align: top;
     border: 1px solid #e5e5e5;
-    margin-right: 18px;
-    margin-top: 20px;
+    margin-right: 21px;
+    margin-top: 18px;
     line-height: 145px;
     text-align: center;
 }
@@ -1809,7 +1801,7 @@ a.buy:active::before {
 
 .service {
     width: 440px;
-    padding-top: 30px;
+    padding-top: 43px;
 }
 
 .service h2 {
@@ -1822,6 +1814,8 @@ a.buy:active::before {
     font-family: "PT Sans Regular", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
+    margin: 0;
+    padding: 6px 0;
 }
 
 section.info-tehnomart {
