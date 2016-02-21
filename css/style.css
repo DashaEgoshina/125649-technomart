@@ -328,7 +328,7 @@ input[type="search"] {
 
 .header-top-nav {
     float: right;
-    width: 454px;
+    min-width: 437px;
     font-size: 0;
     font-family: "Cuprum Regular", "Arial", sans-serif;
     line-height: 18px;
@@ -2191,7 +2191,7 @@ a.cite:hover:not(:active) {
     height: 450px;
     background: #e9e5dc url("../img/big-map.jpg");
     left: 0;
-    top: 35px;
+    top: -10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     position: absolute;
     display: none;
