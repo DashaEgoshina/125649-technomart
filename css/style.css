@@ -351,7 +351,7 @@ a.cart {
     padding: 12px 30px 12px 44px;
 }
 
-a.bookmarks{
+a.bookmarks {
     padding: 12px 30px 12px 44px;
 }
 
@@ -723,7 +723,7 @@ a.offers:hover, a.personal-account:hover {
     text-transform: uppercase;
 }
 
-.header{
+.header {
     padding: 30px 0 30px 28px;
     margin-bottom: 18px;
     background-color: #f2f6f8;
@@ -765,7 +765,7 @@ a.offers:hover, a.personal-account:hover {
     margin-bottom: 13px;
 }
 
-h2{
+h2 {
     font-family: "Cuprum Regular", "Arial", sans-serif;
     font-size: 30px;
     line-height: 24px;
@@ -929,8 +929,8 @@ input:disabled + label, input:disabled + label:hover {
     margin-bottom: 20px;
 }
 
-.filter-power{
-   margin-bottom: 87px;
+.filter-power {
+    margin-bottom: 87px;
 }
 
 a.button {
@@ -944,7 +944,7 @@ a.button {
     border-radius: 3px;
 }
 
-.button.submit{
+.button.submit {
     font-size: 13px;
     padding: 9px 37px;
 }
@@ -1622,7 +1622,7 @@ a.button-popular {
     line-height: 20px;
     color: #000000;
     font-weight: bold;
-    font-family: PT Sans Bold, "Arial", sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     text-align: center;
     padding: 0 25px;
     margin-bottom: 10px;
@@ -1648,7 +1648,7 @@ a.button-popular {
     text-decoration: line-through;
     text-align: center;
     margin-bottom: 7px;
-    font-family: PT Sans Bold, "Arial", sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
     min-height: 20px;
 }
 
@@ -1663,7 +1663,7 @@ a.button-popular {
     padding: 10px 30px;
     border-radius: 3px;
     background: #ee3643;
-    font-family: PT Sans Bold, "Arial", sans-serif;
+    font-family: "PT Sans Bold", "Arial", sans-serif;
 }
 
 .item-price-new:after {
@@ -2056,7 +2056,7 @@ a.button-2:active {
     margin-right: 59px;
 }
 
-.footer-center-navigation li:last-child{
+.footer-center-navigation li:last-child {
     margin-right: 0;
 }
 
@@ -2322,12 +2322,19 @@ h2.modal-content-title {
 a.close {
     color: #000000;
     background-color: #ffffff;
-    padding: 12px 40px;
-    margin-left: 20px;
+    padding: 12px 0;
+    margin-left: 13px;
+    width: 220px;
+    border: 1px solid white;
+    display: inline-block;
+    vertical-align: top;
 }
 
 a.order {
-    padding: 12px 60px;
+    padding: 12px 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
 }
 
 a.close:hover {
@@ -2362,7 +2369,7 @@ a.button-2.close:active {
     outline: none;
     font-size: 13px;
     line-height: 18px;
-    font-family: PT Sans Regular, "Arial", sans-serif;
+    font-family: "PT Sans Regular", "Arial", sans-serif;
     border: 2px solid gainsboro;
     border-radius: 3px;
     margin-bottom: 20px;
@@ -2384,7 +2391,7 @@ a.button-2.close:active {
     padding: 10px;
     font-size: 13px;
     line-height: 18px;
-    font-family: PT Sans Regular, "Arial", sans-serif;
+    font-family: "PT Sans Regular", "Arial", sans-serif;
     resize: none;
     outline: none;
 }
